@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_EXItAPKwEea8svXJIesBYg" name="db_test" id="__D7uAPKvEea8svXJIesBYg" label="db_test" dataPackage="_Ejo38PKwEea8svXJIesBYg _Ejo38fKwEea8svXJIesBYg _Ejo38vKwEea8svXJIesBYg _Ejo38_KwEea8svXJIesBYg _Ejo39PKwEea8svXJIesBYg _Ejo39fKwEea8svXJIesBYg _Ejo39vKwEea8svXJIesBYg _Ejo39_KwEea8svXJIesBYg _Ejo3-PKwEea8svXJIesBYg _Ejo3-fKwEea8svXJIesBYg _Ejo3-vKwEea8svXJIesBYg _Ejo3-_KwEea8svXJIesBYg" DatabaseType="Oracle with SID" DriverClass="oracle.jdbc.OracleDriver" URL="jdbc:oracle:thin:@localhost:1521:XE" dbVersionString="ORACLE_11" Port="1521" Username="system" Password="RX/CTwlUNiA=" ServerName="localhost" DatasourceName="" FileFieldName="" SID="XE" SqlSynthax="SQL Syntax" StringQuote="XE&quot;" DbmsId="oracle_id" ProductId="ORACLE" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="">
+    <taggedValue xmi:id="_EXSeAPKwEea8svXJIesBYg" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_EZEmsPKwEea8svXJIesBYg" tag="package filter" value=""/>
+    <taggedValue xmi:id="_EZOXsPKwEea8svXJIesBYg" tag="Status" value=""/>
+    <taggedValue xmi:id="_EZOXsfKwEea8svXJIesBYg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_EZOXsvKwEea8svXJIesBYg" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_EZOXs_KwEea8svXJIesBYg" tag="Description" value=""/>
+    <taggedValue xmi:id="_EZOXtPKwEea8svXJIesBYg" tag="Author" value=""/>
+    <taggedValue xmi:id="_EZOXtfKwEea8svXJIesBYg" tag="otherParameter"/>
+    <taggedValue xmi:id="_EZhSoPKwEea8svXJIesBYg" tag="DB ProductName" value="Oracle"/>
+    <taggedValue xmi:id="_EZhSofKwEea8svXJIesBYg" tag="DB ProductVersion" value="Oracle Database 11g Release 11.1.0.0.0 - Production"/>
+    <taggedValue xmi:id="_EZhSovKwEea8svXJIesBYg" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_EXSeAfKwEea8svXJIesBYg" key="CONN_PARA_KEY_USERNAME" value="system"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_Ejo38PKwEea8svXJIesBYg" name="ANONYMOUS" dataManager="_EXItAPKwEea8svXJIesBYg"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_Ejo38fKwEea8svXJIesBYg" name="APEX_040000" dataManager="_EXItAPKwEea8svXJIesBYg"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_Ejo38vKwEea8svXJIesBYg" name="APEX_PUBLIC_USER" dataManager="_EXItAPKwEea8svXJIesBYg"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_Ejo38_KwEea8svXJIesBYg" name="CTXSYS" dataManager="_EXItAPKwEea8svXJIesBYg"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_Ejo39PKwEea8svXJIesBYg" name="FLOWS_FILES" dataManager="_EXItAPKwEea8svXJIesBYg"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_Ejo39fKwEea8svXJIesBYg" name="HR" dataManager="_EXItAPKwEea8svXJIesBYg"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_Ejo39vKwEea8svXJIesBYg" name="MDSYS" dataManager="_EXItAPKwEea8svXJIesBYg"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_Ejo39_KwEea8svXJIesBYg" name="OUTLN" dataManager="_EXItAPKwEea8svXJIesBYg"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_Ejo3-PKwEea8svXJIesBYg" name="SYS" dataManager="_EXItAPKwEea8svXJIesBYg"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_Ejo3-fKwEea8svXJIesBYg" name="SYSTEM" dataManager="_EXItAPKwEea8svXJIesBYg"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_Ejo3-vKwEea8svXJIesBYg" name="XDB" dataManager="_EXItAPKwEea8svXJIesBYg"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_Ejo3-_KwEea8svXJIesBYg" name="XS$NULL" dataManager="_EXItAPKwEea8svXJIesBYg"/>
+</xmi:XMI>
