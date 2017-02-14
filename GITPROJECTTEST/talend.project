@@ -375,4 +375,6 @@
     <migrationTask xmi:id="_JkXXN_KnEea8svXJIesBYg" id="org.talend.repository.model.migration.AutoUpdateRelationsMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
   </TalendProperties:Project>
   <TalendProperties:User xmi:id="_CJFQIvKnEea8svXJIesBYg" login="rajeshj@virtusa.com" firstName="Rajesh" lastName="Jayaraman" type="MDM" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_o3_UcfKoEea55YEV9ek9mg" login="shymala@virtusa.com" firstName="Shymala" lastName="Shymala" type="MDM" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_o3_UcvKoEea55YEV9ek9mg" login="Preethikan@virtusa.com" firstName="Preethika" lastName="Nithianandan" type="MDM" additionnalData="{}"/>
 </xmi:XMI>
