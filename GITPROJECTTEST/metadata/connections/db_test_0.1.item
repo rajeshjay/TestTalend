@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
-  <TalendMetadata:DatabaseConnection xmi:id="_EXItAPKwEea8svXJIesBYg" name="db_test" id="__D7uAPKvEea8svXJIesBYg" label="db_test" dataPackage="_Ejo38PKwEea8svXJIesBYg _Ejo38fKwEea8svXJIesBYg _Ejo38vKwEea8svXJIesBYg _Ejo38_KwEea8svXJIesBYg _Ejo39PKwEea8svXJIesBYg _Ejo39fKwEea8svXJIesBYg _Ejo39vKwEea8svXJIesBYg _Ejo39_KwEea8svXJIesBYg _Ejo3-PKwEea8svXJIesBYg _Ejo3-fKwEea8svXJIesBYg _Ejo3-vKwEea8svXJIesBYg _Ejo3-_KwEea8svXJIesBYg" DatabaseType="Oracle with SID" DriverClass="oracle.jdbc.OracleDriver" URL="jdbc:oracle:thin:@localhost:1521:XE" dbVersionString="ORACLE_11" Port="1521" Username="system" Password="RX/CTwlUNiA=" ServerName="localhost" DatasourceName="" FileFieldName="" SID="XE" SqlSynthax="SQL Syntax" StringQuote="XE&quot;" DbmsId="oracle_id" ProductId="ORACLE" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="">
+  <TalendMetadata:DatabaseConnection xmi:id="_EXItAPKwEea8svXJIesBYg" name="db_test" id="__D7uAPKvEea8svXJIesBYg" label="db_test" dataPackage="_FTZz0PNnEea3wIapFzaOeQ _FTZz0fNnEea3wIapFzaOeQ _FTZz0vNnEea3wIapFzaOeQ _FTZz0_NnEea3wIapFzaOeQ _FTZz1PNnEea3wIapFzaOeQ _FTZz1vNnEea3wIapFzaOeQ _FTZz1_NnEea3wIapFzaOeQ _FTZz2PNnEea3wIapFzaOeQ _FTZz2vNnEea3wIapFzaOeQ _FTZz2_NnEea3wIapFzaOeQ _Ejo39fKwEea8svXJIesBYg _Ejo3-fKwEea8svXJIesBYg" ContextMode="true" ContextId="_Eic4APNnEea3wIapFzaOeQ" contextName="Default" DatabaseType="Oracle with SID" DriverClass="oracle.jdbc.OracleDriver" URL="jdbc:oracle:thin:@localhost:1521:XE" dbVersionString="ORACLE_11" Port="context.db_test_Port" Username="context.db_test_Login" Password="context.db_test_Password" ServerName="context.db_test_Server" DatasourceName="" FileFieldName="" SID="context.db_test_Sid" SqlSynthax="SQL Syntax" StringQuote="XE&quot;" DbmsId="oracle_id" ProductId="ORACLE" AdditionalParams="context.db_test_AdditionalParams" StandardSQL="true" SQLMode="false" UiSchema="context.db_test_Schema">
     <taggedValue xmi:id="_EXSeAPKwEea8svXJIesBYg" tag="Is Conn Need Reload" value="false"/>
     <taggedValue xmi:id="_EZEmsPKwEea8svXJIesBYg" tag="package filter" value=""/>
     <taggedValue xmi:id="_EZOXsPKwEea8svXJIesBYg" tag="Status" value=""/>
@@ -12,13 +12,18 @@
     <taggedValue xmi:id="_EZhSoPKwEea8svXJIesBYg" tag="DB ProductName" value="Oracle"/>
     <taggedValue xmi:id="_EZhSofKwEea8svXJIesBYg" tag="DB ProductVersion" value="Oracle Database 11g Release 11.1.0.0.0 - Production"/>
     <taggedValue xmi:id="_EZhSovKwEea8svXJIesBYg" tag="DB IdentifierQuoteString" value="&quot;"/>
-    <parameters xmi:id="_EXSeAfKwEea8svXJIesBYg" key="CONN_PARA_KEY_USERNAME" value="system"/>
+    <parameters xmi:id="_EXSeAfKwEea8svXJIesBYg" key="CONN_PARA_KEY_USERNAME" value="context.db_test_Login"/>
   </TalendMetadata:DatabaseConnection>
-  <orgomg.cwm.resource.relational:Schema xmi:id="_Ejo38PKwEea8svXJIesBYg" name="ANONYMOUS" dataManager="_EXItAPKwEea8svXJIesBYg"/>
-  <orgomg.cwm.resource.relational:Schema xmi:id="_Ejo38fKwEea8svXJIesBYg" name="APEX_040000" dataManager="_EXItAPKwEea8svXJIesBYg"/>
-  <orgomg.cwm.resource.relational:Schema xmi:id="_Ejo38vKwEea8svXJIesBYg" name="APEX_PUBLIC_USER" dataManager="_EXItAPKwEea8svXJIesBYg"/>
-  <orgomg.cwm.resource.relational:Schema xmi:id="_Ejo38_KwEea8svXJIesBYg" name="CTXSYS" dataManager="_EXItAPKwEea8svXJIesBYg"/>
-  <orgomg.cwm.resource.relational:Schema xmi:id="_Ejo39PKwEea8svXJIesBYg" name="FLOWS_FILES" dataManager="_EXItAPKwEea8svXJIesBYg"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_FTZz0PNnEea3wIapFzaOeQ" name="ANONYMOUS" dataManager="_EXItAPKwEea8svXJIesBYg"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_FTZz0fNnEea3wIapFzaOeQ" name="APEX_040000" dataManager="_EXItAPKwEea8svXJIesBYg"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_FTZz0vNnEea3wIapFzaOeQ" name="APEX_PUBLIC_USER" dataManager="_EXItAPKwEea8svXJIesBYg"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_FTZz0_NnEea3wIapFzaOeQ" name="CTXSYS" dataManager="_EXItAPKwEea8svXJIesBYg"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_FTZz1PNnEea3wIapFzaOeQ" name="FLOWS_FILES" dataManager="_EXItAPKwEea8svXJIesBYg"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_FTZz1vNnEea3wIapFzaOeQ" name="MDSYS" dataManager="_EXItAPKwEea8svXJIesBYg"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_FTZz1_NnEea3wIapFzaOeQ" name="OUTLN" dataManager="_EXItAPKwEea8svXJIesBYg"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_FTZz2PNnEea3wIapFzaOeQ" name="SYS" dataManager="_EXItAPKwEea8svXJIesBYg"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_FTZz2vNnEea3wIapFzaOeQ" name="XDB" dataManager="_EXItAPKwEea8svXJIesBYg"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_FTZz2_NnEea3wIapFzaOeQ" name="XS$NULL" dataManager="_EXItAPKwEea8svXJIesBYg"/>
   <orgomg.cwm.resource.relational:Schema xmi:id="_Ejo39fKwEea8svXJIesBYg" name="HR" dataManager="_EXItAPKwEea8svXJIesBYg">
     <ownedElement xsi:type="relational:TdTable" xmi:id="_q3FfUPNhEea3wIapFzaOeQ" name="COUNTRIES" id="_q2vhEPNhEea3wIapFzaOeQ" comment="country table. Contains 25 rows. References with locations table." label="COUNTRIES" tableType="TABLE">
       <taggedValue xmi:id="_q3FfUfNhEea3wIapFzaOeQ" tag="Comment" value="country table. Contains 25 rows. References with locations table."/>
@@ -123,9 +128,6 @@
       </feature>
     </ownedElement>
   </orgomg.cwm.resource.relational:Schema>
-  <orgomg.cwm.resource.relational:Schema xmi:id="_Ejo39vKwEea8svXJIesBYg" name="MDSYS" dataManager="_EXItAPKwEea8svXJIesBYg"/>
-  <orgomg.cwm.resource.relational:Schema xmi:id="_Ejo39_KwEea8svXJIesBYg" name="OUTLN" dataManager="_EXItAPKwEea8svXJIesBYg"/>
-  <orgomg.cwm.resource.relational:Schema xmi:id="_Ejo3-PKwEea8svXJIesBYg" name="SYS" dataManager="_EXItAPKwEea8svXJIesBYg"/>
   <orgomg.cwm.resource.relational:Schema xmi:id="_Ejo3-fKwEea8svXJIesBYg" name="SYSTEM" dataManager="_EXItAPKwEea8svXJIesBYg">
     <ownedElement xsi:type="relational:TdTable" xmi:id="_dxJCMPKwEea8svXJIesBYg" name="BHARATH_TEST" id="_dw_RMPKwEea8svXJIesBYg" label="BHARATH_TEST" tableType="TABLE">
       <taggedValue xmi:id="_dxJCMfKwEea8svXJIesBYg" tag="Comment" value=""/>
@@ -141,6 +143,4 @@
       </feature>
     </ownedElement>
   </orgomg.cwm.resource.relational:Schema>
-  <orgomg.cwm.resource.relational:Schema xmi:id="_Ejo3-vKwEea8svXJIesBYg" name="XDB" dataManager="_EXItAPKwEea8svXJIesBYg"/>
-  <orgomg.cwm.resource.relational:Schema xmi:id="_Ejo3-_KwEea8svXJIesBYg" name="XS$NULL" dataManager="_EXItAPKwEea8svXJIesBYg"/>
 </xmi:XMI>
