@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
-  <context confirmationNeeded="false" name="Default"/>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="DB_CONN_1_Login" prompt="DB_CONN_1_Login?" promptNeeded="false" repositoryContextId="_GgX9QPNnEeapIto9bTkVlw" type="id_String" value="system"/>
+    <contextParameter comment="" name="DB_CONN_1_Sid" prompt="DB_CONN_1_Sid?" promptNeeded="false" repositoryContextId="_GgX9QPNnEeapIto9bTkVlw" type="id_String" value="xe"/>
+    <contextParameter comment="" name="DB_CONN_1_Port" prompt="DB_CONN_1_Port?" promptNeeded="false" repositoryContextId="_GgX9QPNnEeapIto9bTkVlw" type="id_String" value="1521"/>
+    <contextParameter comment="" name="DB_CONN_1_AdditionalParams" prompt="DB_CONN_1_AdditionalParams?" promptNeeded="false" repositoryContextId="_GgX9QPNnEeapIto9bTkVlw" type="id_String" value=""/>
+    <contextParameter comment="" name="DB_CONN_1_Schema" prompt="DB_CONN_1_Schema?" promptNeeded="false" repositoryContextId="_GgX9QPNnEeapIto9bTkVlw" type="id_String" value=""/>
+    <contextParameter comment="" name="DB_CONN_1_Server" prompt="DB_CONN_1_Server?" promptNeeded="false" repositoryContextId="_GgX9QPNnEeapIto9bTkVlw" type="id_String" value="localhost"/>
+    <contextParameter comment="" name="DB_CONN_1_Password" prompt="DB_CONN_1_Password?" promptNeeded="false" repositoryContextId="_GgX9QPNnEeapIto9bTkVlw" type="id_Password" value="RX/CTwlUNiA="/>
+  </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
@@ -146,8 +154,8 @@
     <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
-    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
-    <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="true"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000"/>
     <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
     <elementParameter field="TABLE" name="TRIM_COLUMN">
       <elementValue elementRef="SCHEMA_COLUMN" value="DEPARTMENT_ID"/>
@@ -178,36 +186,79 @@
       <additionalProperties key="Comment" value="Departments table that shows details of departments where employees&#xA;work. Contains 27 rows; references with locations, employees, and job_history tables."/>
     </metadata>
   </node>
-  <node componentName="tOracleOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="64">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="480" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_5VEy4PNhEeaY0qUMLzRvwA-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="DEPARTMENTS" name="Out_tmap">
+      <column comment="Primary key column of departments table." key="true" length="4" name="DEPARTMENT_ID" nullable="false" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="Primary key column of departments table."/>
+      </column>
+      <column comment="A not null column that shows name of a department. Administration,&#xA;Marketing, Purchasing, Human Resources, Shipping, IT, Executive, Public&#xA;Relations, Sales, Finance, and Accounting. " key="false" length="30" name="DEPARTMENT_NAME" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="A not null column that shows name of a department. Administration,&#xA;Marketing, Purchasing, Human Resources, Shipping, IT, Executive, Public&#xA;Relations, Sales, Finance, and Accounting. "/>
+      </column>
+      <column comment="Manager_id of a department. Foreign key to employee_id column of employees table. The manager_id column of the employee table references this column." key="false" length="6" name="MANAGER_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="Manager_id of a department. Foreign key to employee_id column of employees table. The manager_id column of the employee table references this column."/>
+      </column>
+      <column comment="Location id where a department is located. Foreign key to location_id column of locations table." key="false" length="4" name="LOCATION_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="Location id where a department is located. Foreign key to location_id column of locations table."/>
+      </column>
+      <additionalProperties key="Comment" value="Departments table that shows details of departments where employees&#xA;work. Contains 27 rows; references with locations, employees, and job_history tables."/>
+    </metadata>
+    <nodeData xsi:type="MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="Out_tmap">
+        <mapperTableEntries name="DEPARTMENT_ID" expression="row1.DEPARTMENT_ID" type="id_BigDecimal"/>
+        <mapperTableEntries name="DEPARTMENT_NAME" expression="row1.DEPARTMENT_NAME" type="id_String"/>
+        <mapperTableEntries name="MANAGER_ID" expression="row1.MANAGER_ID" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="LOCATION_ID" expression="row1.LOCATION_ID" type="id_BigDecimal" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="DEPARTMENT_ID" type="id_BigDecimal"/>
+        <mapperTableEntries name="DEPARTMENT_NAME" type="id_String"/>
+        <mapperTableEntries name="MANAGER_ID" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="LOCATION_ID" type="id_BigDecimal" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tOracleOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleOutput_1" show="false"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tOracleConnection_1"/>
-    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SID" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11-6" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tOracleConnection_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SID"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11-6"/>
     <elementParameter field="TEXT" name="RAC_URL" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;1521&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1521&quot;"/>
     <elementParameter field="TEXT" name="TYPE" value="Oracle" show="false"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;xe&quot;"/>
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="TABLESCHEMA" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="TEXT" name="TABLESCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;system&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="XOWw2jdQq/4="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;ASTRA_Peeritha&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
-    <elementParameter field="LABEL" name="NOTE" value="Warning : this component configuration will automatically generate a commit before data insert/update/delete"/>
+    <elementParameter field="LABEL" name="NOTE" value="Warning : this component configuration will automatically generate a commit before data insert/update/delete" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
-    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="oracle_id" show="false"/>
     <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:oracle:oci:/@talend&quot;" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
-    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000" show="false"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
     <elementParameter field="TABLE" name="ADD_COLS"/>
     <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
     <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
@@ -236,9 +287,9 @@
     <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
     <elementParameter field="CHECK" name="CONVERT_COLUMN_TABLE_TO_UPPERCASE" value="false"/>
     <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
-    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true" show="false"/>
-    <elementParameter field="CHECK" name="USE_BATCH_AND_USE_CONN" value="false"/>
-    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000" show="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="CHECK" name="USE_BATCH_AND_USE_CONN" value="false" show="false"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
     <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
     <elementParameter field="CHECK" name="USE_TIMESTAMP_FOR_DATE_TYPE" value="true"/>
     <elementParameter field="CHECK" name="TRIM_CHAR" value="true"/>
@@ -286,17 +337,17 @@
     <elementParameter field="CHECK" name="USE_TNS_FILE" value="false"/>
     <elementParameter field="FILE" name="TNS_FILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="TNS_EDITOR" name="TNS_EDITOR" value="" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="context.DB_CONN_1_Server"/>
     <elementParameter field="TEXT" name="TYPE" value="ORACLE_SID" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;1521&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;xe&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="context.DB_CONN_1_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.DB_CONN_1_Sid"/>
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;system&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="XOWw2jdQq/4="/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.DB_CONN_1_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.DB_CONN_1_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kuevCx+ibOvq3YXSW3ZfeJYanAsKfz8w2L4="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.DB_CONN_1_AdditionalParams"/>
     <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
     <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="" show="false"/>
@@ -308,52 +359,13 @@
     <elementParameter field="TEXT" name="LABEL" value="DB_CONN_1"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="128">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
-    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
-    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
-    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
-    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
-    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
-    <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="DEPARTMENT_ID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DEPARTMENT_NAME"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MANAGER_ID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LOCATION_ID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="DEPARTMENTS" name="tLogRow_1">
-      <column comment="Primary key column of departments table." key="true" length="4" name="DEPARTMENT_ID" nullable="false" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value="Primary key column of departments table."/>
-      </column>
-      <column comment="A not null column that shows name of a department. Administration,&#xA;Marketing, Purchasing, Human Resources, Shipping, IT, Executive, Public&#xA;Relations, Sales, Finance, and Accounting. " key="false" length="30" name="DEPARTMENT_NAME" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value="A not null column that shows name of a department. Administration,&#xA;Marketing, Purchasing, Human Resources, Shipping, IT, Executive, Public&#xA;Relations, Sales, Finance, and Accounting. "/>
-      </column>
-      <column comment="Manager_id of a department. Foreign key to employee_id column of employees table. The manager_id column of the employee table references this column." key="false" length="6" name="MANAGER_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value="Manager_id of a department. Foreign key to employee_id column of employees table. The manager_id column of the employee table references this column."/>
-      </column>
-      <column comment="Location id where a department is located. Foreign key to location_id column of locations table." key="false" length="4" name="LOCATION_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value="Location id where a department is located. Foreign key to location_id column of locations table."/>
-      </column>
-      <additionalProperties key="Comment" value="Departments table that shows details of departments where employees&#xA;work. Contains 27 rows; references with locations, employees, and job_history tables."/>
-    </metadata>
-  </node>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tOracleInput_2" offsetLabelX="0" offsetLabelY="0" source="tOracleInput_2" target="tOracleOutput_1">
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tOracleInput_2" offsetLabelX="0" offsetLabelY="0" source="tOracleInput_2" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="Out_tmap" lineStyle="0" metaname="Out_tmap" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tOracleOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Out_tmap" show="false"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tOracleConnection_1" offsetLabelX="0" offsetLabelY="0" source="tOracleConnection_1" target="tOracleInput_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
@@ -365,11 +377,6 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleConnection_1" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
