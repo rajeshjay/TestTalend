@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
-  <context confirmationNeeded="false" name="Default"/>
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="DB_CONN_1_Login" prompt="DB_CONN_1_Login?" promptNeeded="false" repositoryContextId="_GgX9QPNnEeapIto9bTkVlw" type="id_String" value="system"/>
+    <contextParameter comment="" name="DB_CONN_1_Sid" prompt="DB_CONN_1_Sid?" promptNeeded="false" repositoryContextId="_GgX9QPNnEeapIto9bTkVlw" type="id_String" value="xe"/>
+    <contextParameter comment="" name="DB_CONN_1_Port" prompt="DB_CONN_1_Port?" promptNeeded="false" repositoryContextId="_GgX9QPNnEeapIto9bTkVlw" type="id_String" value="1521"/>
+    <contextParameter comment="" name="DB_CONN_1_AdditionalParams" prompt="DB_CONN_1_AdditionalParams?" promptNeeded="false" repositoryContextId="_GgX9QPNnEeapIto9bTkVlw" type="id_String" value=""/>
+    <contextParameter comment="" name="DB_CONN_1_Schema" prompt="DB_CONN_1_Schema?" promptNeeded="false" repositoryContextId="_GgX9QPNnEeapIto9bTkVlw" type="id_String" value=""/>
+    <contextParameter comment="" name="DB_CONN_1_Server" prompt="DB_CONN_1_Server?" promptNeeded="false" repositoryContextId="_GgX9QPNnEeapIto9bTkVlw" type="id_String" value="localhost"/>
+    <contextParameter comment="" name="DB_CONN_1_Password" prompt="DB_CONN_1_Password?" promptNeeded="false" repositoryContextId="_GgX9QPNnEeapIto9bTkVlw" type="id_Password" value="RX/CTwlUNiA="/>
+  </context>
   <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
@@ -110,4 +120,143 @@
     <routinesParameter id="_IgT38_KnEea8svXJIesBYg" name="TalendDate"/>
     <routinesParameter id="_Igdo8PKnEea8svXJIesBYg" name="TalendString"/>
   </parameters>
+  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleInput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_RQRdMPNhEeaY0qUMLzRvwA" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SID"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="RAC_URL" value="context.DB_CONN_1_Server" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.DB_CONN_1_Server"/>
+    <elementParameter field="TEXT" name="TYPE" value="ORACLE_SID" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.DB_CONN_1_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.DB_CONN_1_Sid"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="context.DB_CONN_1_Sid" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.DB_CONN_1_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.DB_CONN_1_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kuevCx+ibOvq3YXSW3ZfeJYanAsKfz8w2L4="/>
+    <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:oracle:oci:/@talend&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_RQRdMPNhEeaY0qUMLzRvwA - LOCATIONS" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;LOCATIONS&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;  &quot;+context.DB_CONN_1_Schema+&quot;.LOCATIONS.LOCATION_ID, &#xA;  &quot;+context.DB_CONN_1_Schema+&quot;.LOCATIONS.STREET_ADDRESS, &#xA;  &quot;+context.DB_CONN_1_Schema+&quot;.LOCATIONS.POSTAL_CODE, &#xA;  &quot;+context.DB_CONN_1_Schema+&quot;.LOCATIONS.CITY, &#xA;  &quot;+context.DB_CONN_1_Schema+&quot;.LOCATIONS.STATE_PROVINCE, &#xA;  &quot;+context.DB_CONN_1_Schema+&quot;.LOCATIONS.COUNTRY_ID&#xA;FROM &quot;+context.DB_CONN_1_Schema+&quot;.LOCATIONS&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="oracle_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.DB_CONN_1_AdditionalParams"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
+    <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOCATION_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STREET_ADDRESS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="POSTAL_CODE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CITY"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STATE_PROVINCE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COUNTRY_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="LOCATIONS" name="tOracleInput_1">
+      <column comment="Primary key of locations table" key="true" length="4" name="LOCATION_ID" nullable="false" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="Primary key of locations table"/>
+      </column>
+      <column comment="Street address of an office, warehouse, or production site of a company.&#xA;Contains building number and street name" key="false" length="40" name="STREET_ADDRESS" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Street address of an office, warehouse, or production site of a company.&#xA;Contains building number and street name"/>
+      </column>
+      <column comment="Postal code of the location of an office, warehouse, or production site&#xA;of a company. " key="false" length="12" name="POSTAL_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Postal code of the location of an office, warehouse, or production site&#xA;of a company. "/>
+      </column>
+      <column comment="A not null column that shows city where an office, warehouse, or&#xA;production site of a company is located. " key="false" length="30" name="CITY" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="A not null column that shows city where an office, warehouse, or&#xA;production site of a company is located. "/>
+      </column>
+      <column comment="State or Province where an office, warehouse, or production site of a&#xA;company is located." key="false" length="25" name="STATE_PROVINCE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="State or Province where an office, warehouse, or production site of a&#xA;company is located."/>
+      </column>
+      <column comment="Country where an office, warehouse, or production site of a company is&#xA;located. Foreign key to country_id column of the countries table." key="false" length="2" name="COUNTRY_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Country where an office, warehouse, or production site of a company is&#xA;located. Foreign key to country_id column of the countries table."/>
+      </column>
+      <additionalProperties key="Comment" value="Locations table that contains specific address of a specific office,&#xA;warehouse, and/or production site of a company. Does not store addresses /&#xA;locations of customers. Contains 23 rows; references with the&#xA;departments and countries tables. "/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOCATION_ID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STREET_ADDRESS"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="POSTAL_CODE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CITY"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STATE_PROVINCE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COUNTRY_ID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="LOCATIONS" name="tLogRow_1">
+      <column comment="Primary key of locations table" key="true" length="4" name="LOCATION_ID" nullable="false" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="Primary key of locations table"/>
+      </column>
+      <column comment="Street address of an office, warehouse, or production site of a company.&#xA;Contains building number and street name" key="false" length="40" name="STREET_ADDRESS" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Street address of an office, warehouse, or production site of a company.&#xA;Contains building number and street name"/>
+      </column>
+      <column comment="Postal code of the location of an office, warehouse, or production site&#xA;of a company. " key="false" length="12" name="POSTAL_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Postal code of the location of an office, warehouse, or production site&#xA;of a company. "/>
+      </column>
+      <column comment="A not null column that shows city where an office, warehouse, or&#xA;production site of a company is located. " key="false" length="30" name="CITY" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="A not null column that shows city where an office, warehouse, or&#xA;production site of a company is located. "/>
+      </column>
+      <column comment="State or Province where an office, warehouse, or production site of a&#xA;company is located." key="false" length="25" name="STATE_PROVINCE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="State or Province where an office, warehouse, or production site of a&#xA;company is located."/>
+      </column>
+      <column comment="Country where an office, warehouse, or production site of a company is&#xA;located. Foreign key to country_id column of the countries table." key="false" length="2" name="COUNTRY_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Country where an office, warehouse, or production site of a company is&#xA;located. Foreign key to country_id column of the countries table."/>
+      </column>
+      <additionalProperties key="Comment" value="Locations table that contains specific address of a specific office,&#xA;warehouse, and/or production site of a company. Does not store addresses /&#xA;locations of customers. Contains 23 rows; references with the&#xA;departments and countries tables. "/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tOracleInput_1" offsetLabelX="0" offsetLabelY="0" source="tOracleInput_1" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
 </talendfile:ProcessType>
