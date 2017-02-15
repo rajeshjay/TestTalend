@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
-  <TalendMetadata:DatabaseConnection xmi:id="_VkV6cPNhEeaY0qUMLzRvwA" name="DB_CONN_1" id="_RQRdMPNhEeaY0qUMLzRvwA" label="DB_CONN_1" dataPackage="_osi6YPNhEeaY0qUMLzRvwA _osi6YfNhEeaY0qUMLzRvwA _osi6YvNhEeaY0qUMLzRvwA _osi6Y_NhEeaY0qUMLzRvwA _osi6ZPNhEeaY0qUMLzRvwA _osi6ZfNhEeaY0qUMLzRvwA _osi6ZvNhEeaY0qUMLzRvwA _osi6Z_NhEeaY0qUMLzRvwA _osi6aPNhEeaY0qUMLzRvwA _osi6afNhEeaY0qUMLzRvwA _osi6avNhEeaY0qUMLzRvwA _osi6a_NhEeaY0qUMLzRvwA" DatabaseType="Oracle with SID" DriverClass="oracle.jdbc.OracleDriver" URL="jdbc:oracle:thin:@localhost:1521:xe" dbVersionString="ORACLE_11" Port="1521" Username="system" Password="RX/CTwlUNiA=" ServerName="localhost" DatasourceName="" FileFieldName="" SID="xe" SqlSynthax="SQL Syntax" DbmsId="oracle_id" ProductId="ORACLE" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="">
-    <taggedValue xmi:id="_VkV6cfNhEeaY0qUMLzRvwA" tag="Is Conn Need Reload" value="true"/>
+  <TalendMetadata:DatabaseConnection xmi:id="_VkV6cPNhEeaY0qUMLzRvwA" name="DB_CONN_1" id="_RQRdMPNhEeaY0qUMLzRvwA" label="DB_CONN_1" dataPackage="_osi6YPNhEeaY0qUMLzRvwA _osi6YfNhEeaY0qUMLzRvwA _osi6YvNhEeaY0qUMLzRvwA _osi6Y_NhEeaY0qUMLzRvwA _osi6ZPNhEeaY0qUMLzRvwA _osi6ZfNhEeaY0qUMLzRvwA _osi6ZvNhEeaY0qUMLzRvwA _osi6Z_NhEeaY0qUMLzRvwA _osi6aPNhEeaY0qUMLzRvwA _osi6afNhEeaY0qUMLzRvwA _osi6avNhEeaY0qUMLzRvwA _osi6a_NhEeaY0qUMLzRvwA" ContextMode="true" ContextId="_GgX9QPNnEeapIto9bTkVlw" contextName="Default" DatabaseType="Oracle with SID" DriverClass="oracle.jdbc.OracleDriver" URL="jdbc:oracle:thin:@localhost:1521:xe" dbVersionString="ORACLE_11" Port="context.DB_CONN_1_Port" Username="context.DB_CONN_1_Login" Password="context.DB_CONN_1_Password" ServerName="context.DB_CONN_1_Server" DatasourceName="" FileFieldName="" SID="context.DB_CONN_1_Sid" SqlSynthax="SQL Syntax" DbmsId="oracle_id" ProductId="ORACLE" AdditionalParams="context.DB_CONN_1_AdditionalParams" StandardSQL="true" SQLMode="false" UiSchema="context.DB_CONN_1_Schema">
+    <taggedValue xmi:id="_VkV6cfNhEeaY0qUMLzRvwA" tag="Is Conn Need Reload" value="false"/>
     <taggedValue xmi:id="_VlS8sPNhEeaY0qUMLzRvwA" tag="package filter" value=""/>
     <taggedValue xmi:id="_VlZDUPNhEeaY0qUMLzRvwA" tag="Status" value=""/>
     <taggedValue xmi:id="_VlZDUfNhEeaY0qUMLzRvwA" tag="Version" value="0.1"/>
@@ -12,7 +12,7 @@
     <taggedValue xmi:id="_osQmgPNhEeaY0qUMLzRvwA" tag="DB ProductName" value="Oracle"/>
     <taggedValue xmi:id="_osQmgfNhEeaY0qUMLzRvwA" tag="DB ProductVersion" value="Oracle Database 11g Release 11.1.0.0.0 - Production"/>
     <taggedValue xmi:id="_osQmgvNhEeaY0qUMLzRvwA" tag="DB IdentifierQuoteString" value="&quot;"/>
-    <parameters xmi:id="_VkV6cvNhEeaY0qUMLzRvwA" key="CONN_PARA_KEY_USERNAME" value="system"/>
+    <parameters xmi:id="_VkV6cvNhEeaY0qUMLzRvwA" key="CONN_PARA_KEY_USERNAME" value="context.DB_CONN_1_Login"/>
   </TalendMetadata:DatabaseConnection>
   <orgomg.cwm.resource.relational:Schema xmi:id="_osi6YPNhEeaY0qUMLzRvwA" name="ANONYMOUS" dataManager="_VkV6cPNhEeaY0qUMLzRvwA"/>
   <orgomg.cwm.resource.relational:Schema xmi:id="_osi6YfNhEeaY0qUMLzRvwA" name="APEX_040000" dataManager="_VkV6cPNhEeaY0qUMLzRvwA"/>
