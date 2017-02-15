@@ -123,7 +123,7 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="LatName"/>
       <elementValue elementRef="ARRAY" value="TalendDataGenerator.getLastName()"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="DOB"/>
-      <elementValue elementRef="ARRAY" value="TalendDate.addDate(TalendDate.getCurrentDate() ,10 ,&quot;MM&quot; )"/>
+      <elementValue elementRef="ARRAY" value="TalendDate.getRandomDate(&quot;2016-01-01&quot; ,&quot;2017-02-15&quot; )"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Gender"/>
       <elementValue elementRef="ARRAY" value=" &quot;Male&quot;,&quot;Female&quot; "/>
     </elementParameter>
