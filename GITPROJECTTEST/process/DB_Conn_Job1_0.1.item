@@ -215,7 +215,7 @@
     <nodeData xsi:type="MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="Out_tmap">
+      <outputTables sizeState="INTERMEDIATE" name="Out_tmap" activateCondensedTool="true" rejectInnerJoin="true">
         <mapperTableEntries name="DEPARTMENT_ID" expression="row1.DEPARTMENT_ID" type="id_BigDecimal"/>
         <mapperTableEntries name="DEPARTMENT_NAME" expression="row1.DEPARTMENT_NAME" type="id_String"/>
         <mapperTableEntries name="MANAGER_ID" expression="row1.MANAGER_ID" type="id_BigDecimal" nullable="true"/>
