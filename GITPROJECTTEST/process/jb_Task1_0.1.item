@@ -125,7 +125,7 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="DOB"/>
       <elementValue elementRef="ARRAY" value="TalendDate.addDate(TalendDate.getCurrentDate() ,10 ,&quot;MM&quot; )"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Gender"/>
-      <elementValue elementRef="ARRAY" value=" &quot;Male,Female&quot; "/>
+      <elementValue elementRef="ARRAY" value=" &quot;Male&quot;,&quot;Female&quot; "/>
     </elementParameter>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
