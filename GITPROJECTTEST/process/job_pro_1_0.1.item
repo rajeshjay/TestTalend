@@ -117,7 +117,7 @@
     <elementParameter field="TEXT" name="NB_ROWS" value="10" show="false"/>
     <elementParameter field="TABLE" name="VALUES" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
-      <elementValue elementRef="ARRAY" value="Mathematical.BITAND(1 ,2 )"/>
+      <elementValue elementRef="ARRAY" value="Mathematical.INT(&quot;100&quot; )"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="name"/>
       <elementValue elementRef="ARRAY" value="TalendString.getAsciiRandomString(6 )"/>
     </elementParameter>
