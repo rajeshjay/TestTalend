@@ -227,8 +227,8 @@
         <mapperTableEntries name="MANAGER_ID" type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="LOCATION_ID" type="id_BigDecimal" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="DEPARTMENT_ID" type="id_BigDecimal"/>
+      <inputTables sizeState="INTERMEDIATE" name="row2" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
+        <mapperTableEntries name="DEPARTMENT_ID" expression="row1.DEPARTMENT_ID " type="id_BigDecimal" operator="="/>
         <mapperTableEntries name="DEPARTMENT_NAME" type="id_String"/>
         <mapperTableEntries name="MANAGER_ID" type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="LOCATION_ID" type="id_BigDecimal" nullable="true"/>
