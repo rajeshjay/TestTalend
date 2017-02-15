@@ -229,6 +229,7 @@
       <relatedItems xmi:id="_BPYaEvNBEea8svXJIesBYg" id="MDM" version="Latest" type="routine"/>
       <relatedItems xmi:id="_BPYaE_NBEea8svXJIesBYg" id="_f1T28PNAEea8svXJIesBYg - CustemorAddress" version="Latest" type="schema"/>
       <relatedItems xmi:id="_BPYaFPNBEea8svXJIesBYg" id="_5wQygPM_Eea8svXJIesBYg - CustomerDetail" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_aAva0PNBEea8svXJIesBYg" id="_3UbtcPM4Eea8svXJIesBYg" version="Latest" type="property"/>
     </ItemsRelations>
     <migrationTask xmi:id="_HgmHYPKnEea8svXJIesBYg" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_HgmHYfKnEea8svXJIesBYg" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
