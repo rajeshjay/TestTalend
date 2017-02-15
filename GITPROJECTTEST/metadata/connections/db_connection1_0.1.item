@@ -24,7 +24,7 @@
   <orgomg.cwm.resource.relational:Schema xmi:id="_4tnfN_M-Eea8svXJIesBYg" name="OUTLN" dataManager="_RlveEPM5Eea8svXJIesBYg"/>
   <orgomg.cwm.resource.relational:Schema xmi:id="_4tnfOPM-Eea8svXJIesBYg" name="SYS" dataManager="_RlveEPM5Eea8svXJIesBYg"/>
   <orgomg.cwm.resource.relational:Schema xmi:id="_4tnfOfM-Eea8svXJIesBYg" name="SYSTEM" dataManager="_RlveEPM5Eea8svXJIesBYg">
-    <ownedElement xsi:type="relational:TdTable" xmi:id="_oBAlsfNDEea8svXJIesBYg" name="CUSTOMER_DETAILS" id="_oBAlsPNDEea8svXJIesBYg" label="CUSTOMER_DETAILS" tableType="TABLE">
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_oBAlsfNDEea8svXJIesBYg" name="CUSTOMER_DETAILS" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_oBAlsPNDEea8svXJIesBYg" label="CUSTOMER_DETAILS" tableType="TABLE">
       <taggedValue xmi:id="_oBAlsvNDEea8svXJIesBYg" tag="Comment" value=""/>
       <feature xsi:type="relational:TdColumn" xmi:id="_oBAls_NDEea8svXJIesBYg" name="CUSTMERID" label="CUSTMERID" length="22" sourceType="DEC" talendType="id_BigDecimal">
         <taggedValue xmi:id="_oBAltPNDEea8svXJIesBYg" tag="Comment" value=""/>
