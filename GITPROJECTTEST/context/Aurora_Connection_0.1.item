@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_Ch6o8PQ-Eea3wIapFzaOeQ" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_Ch6o8fQ-Eea3wIapFzaOeQ" comment="" name="Aurora_Host" prompt="Aurora_Host?" promptNeeded="false" type="id_String" value="greendelivery.virtusa.com"/>
+  <contextParameter xmi:id="_Ch6o8vQ-Eea3wIapFzaOeQ" comment="" name="Aurora_Port" prompt="Aurora_Port?" promptNeeded="false" type="id_String" value="3306"/>
+  <contextParameter xmi:id="_Ch6o8_Q-Eea3wIapFzaOeQ" comment="" name="Aurora_UserName" prompt="Aurora_UserName?" promptNeeded="false" type="id_String" value="admin"/>
+  <contextParameter xmi:id="_Ch6o9PQ-Eea3wIapFzaOeQ" comment="" name="Aurora_Password" prompt="Aurora_Password?" promptNeeded="false" type="id_String" value="1234qwer$$"/>
+  <contextParameter xmi:id="_Ch6o9fQ-Eea3wIapFzaOeQ" comment="" name="Aurora_Stg_Database" prompt="Aurora_Stg_Database?" promptNeeded="false" type="id_String" value="Polaris_Staging"/>
+  <contextParameter xmi:id="_Ch6o9vQ-Eea3wIapFzaOeQ" comment="" name="Aurora_Dm_Database" prompt="Aurora_Dm_Database?" promptNeeded="false" type="id_String" value="Virtusapolaris_RM"/>
+</talendfile:ContextType>

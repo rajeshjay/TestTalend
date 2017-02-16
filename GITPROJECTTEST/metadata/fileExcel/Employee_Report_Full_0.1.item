@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:FileExcelConnection xmi:id="_BQ_6oP_NEeWSFZVp8rV1_A" name="Employee_Report_Full" dataPackage="_BQ_6of_NEeWSFZVp8rV1_A" Server="Localhost 127.0.0.1" FilePath="C:/Users/amurugesan/Documents/VirtusaPolaris_RM_Integration/New_AsOf20160411/XLS/Virtusa_Employee_List_070416.xlsx" Encoding="UTF-8" UseHeader="true" HeaderValue="2" FirstLineCaption="true" SheetName="Virtusa_Employee_List_" firstColumn="1" thousandSeparator="','" decimalSeparator="'.'" selectAllSheets="true" sheetList="Virtusa_Employee_List_:w&#xA;" generationMode="EVENT_MODE">
+    <sheetColumns>A</sheetColumns>
+    <sheetColumns>B</sheetColumns>
+    <sheetColumns>C</sheetColumns>
+    <sheetColumns>D</sheetColumns>
+    <sheetColumns>E</sheetColumns>
+    <sheetColumns>F</sheetColumns>
+    <sheetColumns>G</sheetColumns>
+    <sheetColumns>H</sheetColumns>
+    <sheetColumns>I</sheetColumns>
+    <sheetColumns>J</sheetColumns>
+    <sheetColumns>K</sheetColumns>
+    <sheetColumns>L</sheetColumns>
+    <sheetColumns>M</sheetColumns>
+    <sheetColumns>N</sheetColumns>
+    <sheetColumns>O</sheetColumns>
+    <sheetColumns>P</sheetColumns>
+    <sheetColumns>Q</sheetColumns>
+    <sheetColumns>R</sheetColumns>
+    <sheetColumns>S</sheetColumns>
+    <sheetColumns>T</sheetColumns>
+    <sheetColumns>U</sheetColumns>
+    <sheetColumns>V</sheetColumns>
+    <sheetColumns>W</sheetColumns>
+    <sheetColumns>X</sheetColumns>
+    <sheetColumns>Y</sheetColumns>
+    <sheetColumns>Z</sheetColumns>
+    <sheetColumns>AA</sheetColumns>
+    <sheetColumns>AB</sheetColumns>
+    <sheetColumns>AC</sheetColumns>
+    <sheetColumns>AD</sheetColumns>
+    <sheetColumns>AE</sheetColumns>
+    <sheetColumns>AF</sheetColumns>
+    <sheetColumns>AG</sheetColumns>
+    <sheetColumns>AH</sheetColumns>
+    <sheetColumns>AI</sheetColumns>
+    <sheetColumns>AJ</sheetColumns>
+    <sheetColumns>AK</sheetColumns>
+    <sheetColumns>AL</sheetColumns>
+    <sheetColumns>AM</sheetColumns>
+    <sheetColumns>AN</sheetColumns>
+    <sheetColumns>AO</sheetColumns>
+    <sheetColumns>AP</sheetColumns>
+    <sheetColumns>AQ</sheetColumns>
+  </TalendMetadata:FileExcelConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_BQ_6of_NEeWSFZVp8rV1_A" name="default" dataManager="_BQ_6oP_NEeWSFZVp8rV1_A">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_BQ_6ov_NEeWSFZVp8rV1_A" id="_Io9RkP_LEeWSFZVp8rV1_A" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BQ_6o__NEeWSFZVp8rV1_A" label="Employee_Unit" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BQ_6pP_NEeWSFZVp8rV1_A" label="Employee_Number" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BQ_6pf_NEeWSFZVp8rV1_A" label="Employee_Name" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BQ_6pv_NEeWSFZVp8rV1_A" label="CEG" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BQ_6p__NEeWSFZVp8rV1_A" label="Primary_Practice" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BQ_6qP_NEeWSFZVp8rV1_A" label="Secondary_Practice" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BQ_6qf_NEeWSFZVp8rV1_A" label="Job_Title" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BQ_6qv_NEeWSFZVp8rV1_A" label="Job_Tier" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BQ_6q__NEeWSFZVp8rV1_A" label="Permanent_ATC" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BQ_6rP_NEeWSFZVp8rV1_A" label="Group_Permanent_ATC" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BQ_6rf_NEeWSFZVp8rV1_A" label="Working_ATC" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BQ_6rv_NEeWSFZVp8rV1_A" label="Group_Working_ATC" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BQ_6r__NEeWSFZVp8rV1_A" label="Extension_number" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BQ_6sP_NEeWSFZVp8rV1_A" label="Contact_Number" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BQ_6sf_NEeWSFZVp8rV1_A" label="Email_ID" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BQ_6sv_NEeWSFZVp8rV1_A" label="Employment_Type" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BQ_6s__NEeWSFZVp8rV1_A" label="COGS" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BQ_6tP_NEeWSFZVp8rV1_A" label="Deployable" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BQ_6tf_NEeWSFZVp8rV1_A" label="CoreUnit" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BQ_6tv_NEeWSFZVp8rV1_A" label="Billing_Target" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BQ_6t__NEeWSFZVp8rV1_A" label="Billing_Percentage" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BQ_6uP_NEeWSFZVp8rV1_A" label="Non_Billing_Percentage" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BQ_6uf_NEeWSFZVp8rV1_A" label="Visa_Status_Country_US" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BQ_6uv_NEeWSFZVp8rV1_A" label="US_Visa_Status_Visa_Type" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BQ_6u__NEeWSFZVp8rV1_A" label="US_Visa_Status_Valid_till" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BQ_6vP_NEeWSFZVp8rV1_A" label="Visa_Status_Country_UK" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BQ_6vf_NEeWSFZVp8rV1_A" label="UK_Visa_Status_Visa_Type" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BQ_6vv_NEeWSFZVp8rV1_A" label="UK_Visa_Status_Valid_till" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BQ_6v__NEeWSFZVp8rV1_A" label="Visa_Status_Country_Other" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BQ_6wP_NEeWSFZVp8rV1_A" label="Other_Visa_Status_Visa_Type" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BQ_6wf_NEeWSFZVp8rV1_A" label="Other_Visa_Status_Valid_till" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BQ_6wv_NEeWSFZVp8rV1_A" label="Virtusa_Experience_Years" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BQ_6w__NEeWSFZVp8rV1_A" label="IT_Experience_Years" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BQ_6xP_NEeWSFZVp8rV1_A" label="Date_of_Joining" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BQ_6xf_NEeWSFZVp8rV1_A" label="Last_Working_Day_For_Resigned_Employees" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BQ_6xv_NEeWSFZVp8rV1_A" label="Core_Category" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BQ_6x__NEeWSFZVp8rV1_A" label="Headcount" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BQ_6yP_NEeWSFZVp8rV1_A" label="Core_Type" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BQ_6yf_NEeWSFZVp8rV1_A" label="Core" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BQ_6yv_NEeWSFZVp8rV1_A" label="COA_Department" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BQ_6y__NEeWSFZVp8rV1_A" label="HR_Department" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BQ_6zP_NEeWSFZVp8rV1_A" label="Originally_Hired_Location_Group_ATC" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BQ_6zf_NEeWSFZVp8rV1_A" label="Originally_Hired_Location_Type" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

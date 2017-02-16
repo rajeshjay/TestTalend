@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:FileExcelConnection xmi:id="_a9OLQfTXEeWDfJq7P4oDUQ" name="Polaris_AssignmentDump" dataPackage="_a9OLQvTXEeWDfJq7P4oDUQ" Server="Localhost 127.0.0.1" FilePath="C:/Users/amurugesan/Documents/VirtusaPolaris_RM_Integration/AssignmentDump.xlsx" Encoding="UTF-8" UseHeader="true" HeaderValue="1" FirstLineCaption="true" SheetName="Assignment Dump" firstColumn="1" thousandSeparator="','" decimalSeparator="'.'" selectAllSheets="true" sheetList="Assignment Dump:w&#xA;">
+    <sheetColumns>A</sheetColumns>
+    <sheetColumns>B</sheetColumns>
+    <sheetColumns>C</sheetColumns>
+    <sheetColumns>D</sheetColumns>
+    <sheetColumns>E</sheetColumns>
+    <sheetColumns>F</sheetColumns>
+  </TalendMetadata:FileExcelConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_a9OLQvTXEeWDfJq7P4oDUQ" name="default" dataManager="_a9OLQfTXEeWDfJq7P4oDUQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_a9OLQ_TXEeWDfJq7P4oDUQ" id="_94Nj8PTWEeWDfJq7P4oDUQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_a9OLRPTXEeWDfJq7P4oDUQ" label="EMPID" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_a9OLRfTXEeWDfJq7P4oDUQ" label="EMP_MAILID" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_a9OLRvTXEeWDfJq7P4oDUQ" label="PCODE" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_a9OLR_TXEeWDfJq7P4oDUQ" label="PROJ_DESC" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_a9OLSPTXEeWDfJq7P4oDUQ" label="ASSOC_PROJ_START_DATE" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_a9OLSfTXEeWDfJq7P4oDUQ" label="ASSOC_PROJ_REL_DATE" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

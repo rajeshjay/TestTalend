@@ -1,0 +1,1044 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default">
+  <context confirmationNeeded="false" name="Default"/>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Talend/6.2.1/studio/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <elementParameter field="CHECK" name="UPDATE_COMPONENTS" value="false"/>
+    <elementParameter field="CHECK" name="STATS_DEFAULT_PROJECTSETTING" value="true"/>
+    <elementParameter field="PROPERTY_TYPE" name="PROPERTY_TYPE" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:PROPERTY_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:REPOSITORY_PROPERTY_TYPE" value=""/>
+    <elementParameter field="CHECK" name="IMPLICT_DEFAULT_PROJECTSETTING" value="true"/>
+    <elementParameter field="PROPERTY_TYPE" name="PROPERTY_TYPE_IMPLICIT_CONTEXT" value=""/>
+    <routinesParameter id="_ttWMYACeEearqKrBbiS96g" name="DQTechnical"/>
+    <routinesParameter id="_tadsoACeEearqKrBbiS96g" name="DataOperation"/>
+    <routinesParameter id="_ttNCcACeEearqKrBbiS96g" name="DataQualityDependencies"/>
+    <routinesParameter id="_ttJ_IACeEearqKrBbiS96g" name="DataQuality"/>
+    <routinesParameter id="_ttTJEACeEearqKrBbiS96g" name="DqStringHandling"/>
+    <routinesParameter id="_ttZ2wACeEearqKrBbiS96g" name="MDM"/>
+    <routinesParameter id="_tsqP4ACeEearqKrBbiS96g" name="Mathematical"/>
+    <routinesParameter id="_tsuhUACeEearqKrBbiS96g" name="Numeric"/>
+    <routinesParameter id="_tsyLsACeEearqKrBbiS96g" name="Relational"/>
+    <routinesParameter id="_ttGUwACeEearqKrBbiS96g" name="SQLike"/>
+    <routinesParameter id="_ts12EACeEearqKrBbiS96g" name="StringHandling"/>
+    <routinesParameter id="_ts45YACeEearqKrBbiS96g" name="TalendDataGenerator"/>
+    <routinesParameter id="_ts8jwACeEearqKrBbiS96g" name="TalendDate"/>
+    <routinesParameter id="_ts_nEACeEearqKrBbiS96g" name="TalendString"/>
+    <routinesParameter id="_dnpOQD3HEeO7UMG_YqAtyA" name="DQ_METHODS"/>
+    <routinesParameter id="_tCAnQMeYEeSrE9pbd6oYnw" name="DataTypeUtil"/>
+    <routinesParameter id="_8qwkYFjNEdyj6eiqDt60Og" name="DemoRoutines"/>
+    <routinesParameter id="_HKXfQGIZEd26GZmhFZLTPA" name="GetRandomPhoneNum"/>
+    <routinesParameter id="_PESjcCYYEeW5gZVXtfxI4A" name="IpaasFileUtil"/>
+    <routinesParameter id="_JsAZQHlHEeS5M-4wmV8XNg" name="Transformation"/>
+    <routinesParameter id="_1cAIgMywEeSadJSYhJEDKA" name="tic_word_titleCase"/>
+  </parameters>
+  <node componentName="tAmazonAuroraInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tAmazonAuroraInput_1" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\EIM\Talend\cmdline\studio\configuration\lib\java" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_y2vbkPc8EeWXKNyBRbk20A" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;greendelivery.virtusa.com&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;Virtusapolaris_RM&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="AMAZON_AURORA" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;admin&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="YrA4j4HVmaUsvBwXOLY9wA=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;Virtusa_Resource_Request_Details&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xD;&#xA;  `Virtusa_Resource_Request_Details`.`Resource_Request_ID`, &#xD;&#xA;  `Virtusa_Resource_Request_Details`.`Project_Number`, &#xD;&#xA;  `Virtusa_Resource_Request_Details`.`Request_Status`, &#xD;&#xA;  `Virtusa_Resource_Request_Details`.`Request_Type`, &#xD;&#xA;  `Virtusa_Resource_Request_Details`.`Role_Requested`, &#xD;&#xA;  `Virtusa_Resource_Request_Details`.`Name_of_the_Candidate`, &#xD;&#xA;  `Virtusa_Resource_Request_Details`.`Option_Status`, &#xD;&#xA;  `Virtusa_Resource_Request_Details`.`CEG`, &#xD;&#xA;  `Virtusa_Resource_Request_Details`.`Practice`, &#xD;&#xA;  `Virtusa_Resource_Request_Details`.`Allocation_FTE`, &#xD;&#xA;  `Virtusa_Resource_Request_Details`.`Billing_FTE`, &#xD;&#xA;  `Virtusa_Resource_Request_Details`.`Mandatory_Skills`, &#xD;&#xA;  CASE &#xD;&#xA;           WHEN Source_Company='Virtusa' THEN START_DATE&#xD;&#xA;           WHEN substring(Start_Date,1,3) IN ('Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec') THEN&#xD;&#xA;                           CASE WHEN substring(TRIM(Start_Date),LENGTH(TRIM(Start_Date))-3,2)>=19 THEN&#xD;&#xA;                                           Date_Format(STR_TO_DATE(Start_Date, '%b %d, %Y'),'%d-%b-%y')&#xD;&#xA;                           END&#xD;&#xA;           WHEN substring(TRIM(Start_Date),1,2)>=19 AND substring(TRIM(Start_Date),5,1)='-' THEN&#xD;&#xA;                           Date_Format(STR_TO_DATE(Start_Date, '%Y-%m-%d'),'%d-%b-%y')&#xD;&#xA;           WHEN (substring(TRIM(Start_Date),3,1)='/' OR substring(TRIM(Start_Date),2,1)='/') &#xD;&#xA;                            AND substring(TRIM(Start_Date),LENGTH(TRIM(Start_Date))-3,2)>=19 then&#xD;&#xA;                           Date_Format(STR_TO_DATE(Start_Date, '%m/%d/%Y'),'%d-%b-%y')&#xD;&#xA;           WHEN (substring(TRIM(Start_Date),3,1)='/' OR substring(TRIM(Start_Date),2,1)='/') &#xD;&#xA;                           AND substring(TRIM(Start_Date),LENGTH(TRIM(Start_Date))-1,2) IN ('AM','PM') THEN&#xD;&#xA;                           DATE_FORMAT(STR_TO_DATE(Start_Date, '%m/%d/%Y %h:%i:%s %p'),'%d-%b-%y')&#xD;&#xA;           WHEN (substring(TRIM(Start_Date),3,1)='-' AND &#xD;&#xA;                             substring(Start_Date,4,3) IN ('Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec')) THEN&#xD;&#xA;                             DATE_FORMAT(STR_TO_DATE(Start_Date, '%d-%b-%Y'),'%d-%b-%y')&#xD;&#xA;&#x9;&#x9;   WHEN substring(Start_Date,1,3) IN ('Sun','Mon','Tue','Wed','Thu','Fri','Sat') THEN&#xD;&#xA;&#x9;                      CASE WHEN substring(Start_Date,5,3) IN ('Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec') THEN &#xD;&#xA;                  DATE_FORMAT(STR_TO_DATE(Start_Date,'%a %b %d %T IST %Y'),'%e-%b-%y')&#xD;&#xA;                   END&#xD;&#xA;                   END As Start_Date, &#xD;&#xA;  `Virtusa_Resource_Request_Details`.`End_Date`, &#xD;&#xA;  `Virtusa_Resource_Request_Details`.`Allocation_Status`, &#xD;&#xA;  `Virtusa_Resource_Request_Details`.`Shadow_Classification`, &#xD;&#xA;  `Virtusa_Resource_Request_Details`.`Client_Interview_Required`, &#xD;&#xA;  `Virtusa_Resource_Request_Details`.`Working_ATC`, &#xD;&#xA;  `Virtusa_Resource_Request_Details`.`Working_State`, &#xD;&#xA;  `Virtusa_Resource_Request_Details`.`Working_City`, &#xD;&#xA;  `Virtusa_Resource_Request_Details`.`Onsite_Offshore`, &#xD;&#xA;  `Virtusa_Resource_Request_Details`.`Min_Role_Tier`, &#xD;&#xA;  `Virtusa_Resource_Request_Details`.`Max_Role_Tier`, &#xD;&#xA;  `Virtusa_Resource_Request_Details`.`Core_Team`, &#xD;&#xA;  `Virtusa_Resource_Request_Details`.`Account_Name`, &#xD;&#xA;  `Virtusa_Resource_Request_Details`.`Project_Name`, &#xD;&#xA;  `Virtusa_Resource_Request_Details`.`Engagement_Type`, &#xD;&#xA;  `Virtusa_Resource_Request_Details`.`Project_Status`, &#xD;&#xA;  `Virtusa_Resource_Request_Details`.`DC`, &#xD;&#xA;  `Virtusa_Resource_Request_Details`.`Presented_No_Candidates`, &#xD;&#xA;  `Virtusa_Resource_Request_Details`.`Presented_Candidate_Names`, &#xD;&#xA;  `Virtusa_Resource_Request_Details`.`Selected _No_Candidates`, &#xD;&#xA;  `Virtusa_Resource_Request_Details`.`Selected_Candidate_Names`, &#xD;&#xA;  `Virtusa_Resource_Request_Details`.`Allocated_Candidate`, &#xD;&#xA;  `Virtusa_Resource_Request_Details`.`Allocation_Date`, &#xD;&#xA;  `Virtusa_Resource_Request_Details`.`Rejected_No_Candidates`, &#xD;&#xA;  `Virtusa_Resource_Request_Details`.`Rejected_Candidate_Names`, &#xD;&#xA;  `Virtusa_Resource_Request_Details`.`No_Action_No_Candidates`, &#xD;&#xA;  `Virtusa_Resource_Request_Details`.`No_Action_N_Candidate_Names`, &#xD;&#xA;  `Virtusa_Resource_Request_Details`.`Week_Required`, &#xD;&#xA;&#xD;&#xA;  CASE&#xD;&#xA;        WHEN Source_Company = 'Virtusa' THEN &#xD;&#xA;        DATE_FORMAT(STR_TO_DATE(Start_Date,'%e-%b-%y'),'%b-%Y')&#xD;&#xA;        WHEN&#xD;&#xA;            SUBSTRING(Start_Date, 1, 3) IN ('Jan' , 'Feb',&#xD;&#xA;                'Mar',&#xD;&#xA;                'Apr',&#xD;&#xA;                'May',&#xD;&#xA;                'Jun',&#xD;&#xA;                'Jul',&#xD;&#xA;                'Aug',&#xD;&#xA;                'Sep',&#xD;&#xA;                'Oct',&#xD;&#xA;                'Nov',&#xD;&#xA;                'Dec')&#xD;&#xA;        THEN&#xD;&#xA;            CASE&#xD;&#xA;                WHEN&#xD;&#xA;                    SUBSTRING(TRIM(Start_Date),&#xD;&#xA;                        LENGTH(TRIM(Start_Date)) - 3,&#xD;&#xA;                        2) >= 19&#xD;&#xA;                THEN&#xD;&#xA;                    DATE_FORMAT(STR_TO_DATE(Start_Date, '%b %d, %Y'),&#xD;&#xA;                            '%d-%b-%y')&#xD;&#xA;            END&#xD;&#xA;        WHEN&#xD;&#xA;            SUBSTRING(TRIM(Start_Date),&#xD;&#xA;                1,&#xD;&#xA;                2) >= 19&#xD;&#xA;                AND SUBSTRING(TRIM(Start_Date),&#xD;&#xA;                5,&#xD;&#xA;                1) = '-'&#xD;&#xA;        THEN&#xD;&#xA;            DATE_FORMAT(STR_TO_DATE(Start_Date, '%Y-%m-%d'),&#xD;&#xA;                    '%d-%b-%y')&#xD;&#xA;        WHEN&#xD;&#xA;            (SUBSTRING(TRIM(Start_Date),&#xD;&#xA;                3,&#xD;&#xA;                1) = '/'&#xD;&#xA;                OR SUBSTRING(TRIM(Start_Date),&#xD;&#xA;                2,&#xD;&#xA;                1) = '/')&#xD;&#xA;                AND SUBSTRING(TRIM(Start_Date),&#xD;&#xA;                LENGTH(TRIM(Start_Date)) - 3,&#xD;&#xA;                2) >= 19&#xD;&#xA;        THEN&#xD;&#xA;            DATE_FORMAT(STR_TO_DATE(Start_Date, '%m/%d/%Y'),&#xD;&#xA;                    '%d-%b-%y')&#xD;&#xA;        WHEN&#xD;&#xA;            (SUBSTRING(TRIM(Start_Date),&#xD;&#xA;                3,&#xD;&#xA;                1) = '/'&#xD;&#xA;                OR SUBSTRING(TRIM(Start_Date),&#xD;&#xA;                2,&#xD;&#xA;                1) = '/')&#xD;&#xA;                AND SUBSTRING(TRIM(Start_Date),&#xD;&#xA;                LENGTH(TRIM(Start_Date)) - 1,&#xD;&#xA;                2) IN ('AM' , 'PM')&#xD;&#xA;        THEN&#xD;&#xA;            DATE_FORMAT(STR_TO_DATE(Start_Date,&#xD;&#xA;                            '%m/%d/%Y %h:%i:%s %p'),&#xD;&#xA;                    '%d-%b-%y')&#xD;&#xA;        WHEN&#xD;&#xA;            (SUBSTRING(TRIM(Start_Date),&#xD;&#xA;                3,&#xD;&#xA;                1) = '-'&#xD;&#xA;                AND SUBSTRING(Start_Date, 4, 3) IN ('Jan' , 'Feb',&#xD;&#xA;                'Mar',&#xD;&#xA;                'Apr',&#xD;&#xA;                'May',&#xD;&#xA;                'Jun',&#xD;&#xA;                'Jul',&#xD;&#xA;                'Aug',&#xD;&#xA;                'Sep',&#xD;&#xA;                'Oct',&#xD;&#xA;                'Nov',&#xD;&#xA;                'Dec'))&#xD;&#xA;        THEN&#xD;&#xA;            DATE_FORMAT(STR_TO_DATE(Start_Date, '%d-%b-%Y'),&#xD;&#xA;                    '%d-%b-%y')&#xD;&#xA;        WHEN&#xD;&#xA;            SUBSTRING(Start_Date, 1, 3) IN ('Sun' , 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat')&#xD;&#xA;        THEN&#xD;&#xA;            CASE&#xD;&#xA;                WHEN&#xD;&#xA;                    SUBSTRING(Start_Date, 5, 3) IN ('Jan' , 'Feb',&#xD;&#xA;                        'Mar',&#xD;&#xA;                        'Apr',&#xD;&#xA;                        'May',&#xD;&#xA;                        'Jun',&#xD;&#xA;                        'Jul',&#xD;&#xA;                        'Aug',&#xD;&#xA;                        'Sep',&#xD;&#xA;                        'Oct',&#xD;&#xA;                        'Nov',&#xD;&#xA;                        'Dec')&#xD;&#xA;                THEN&#xD;&#xA;                    DATE_FORMAT(STR_TO_DATE(Start_Date,'%a %b %d %T IST %Y'),'%b-%Y')&#xD;&#xA;            END&#xD;&#xA;    END AS Month_Required,&#xD;&#xA; CASE &#xD;&#xA;           WHEN Source_Company='Virtusa' THEN Request_Submitted_Date&#xD;&#xA;           WHEN substring(Request_Submitted_Date,1,3) IN ('Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec') THEN&#xD;&#xA;                           CASE WHEN substring(TRIM(Request_Submitted_Date),LENGTH(TRIM(Request_Submitted_Date))-3,2)>=19 THEN&#xD;&#xA;                                           Date_Format(STR_TO_DATE(Request_Submitted_Date, '%b %d, %Y'),'%d-%b-%y')&#xD;&#xA;                           END&#xD;&#xA;           WHEN substring(TRIM(Request_Submitted_Date),1,2)>=19 AND substring(TRIM(Request_Submitted_Date),5,1)='-' THEN&#xD;&#xA;                           Date_Format(STR_TO_DATE(Request_Submitted_Date, '%Y-%m-%d'),'%d-%b-%y')&#xD;&#xA;           WHEN (substring(TRIM(Request_Submitted_Date),3,1)='/' OR substring(TRIM(Request_Submitted_Date),2,1)='/') &#xD;&#xA;                            AND substring(TRIM(Request_Submitted_Date),LENGTH(TRIM(Request_Submitted_Date))-3,2)>=19 then&#xD;&#xA;                           Date_Format(STR_TO_DATE(Request_Submitted_Date, '%m/%d/%Y'),'%d-%b-%y')&#xD;&#xA;           WHEN (substring(TRIM(Request_Submitted_Date),3,1)='/' OR substring(TRIM(Request_Submitted_Date),2,1)='/') &#xD;&#xA;                           AND substring(TRIM(Request_Submitted_Date),LENGTH(TRIM(Request_Submitted_Date))-1,2) IN ('AM','PM') THEN&#xD;&#xA;                           DATE_FORMAT(STR_TO_DATE(Request_Submitted_Date, '%m/%d/%Y %h:%i:%s %p'),'%d-%b-%y')&#xD;&#xA;           WHEN (substring(TRIM(Request_Submitted_Date),3,1)='-' AND &#xD;&#xA;                             substring(Request_Submitted_Date,4,3) IN ('Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec')) THEN&#xD;&#xA;                             DATE_FORMAT(STR_TO_DATE(Request_Submitted_Date, '%d-%b-%Y'),'%d-%b-%y')&#xD;&#xA;&#x9;&#x9;   WHEN substring(Request_Submitted_Date,1,3) IN ('Sun','Mon','Tue','Wed','Thu','Fri','Sat') THEN&#xD;&#xA;&#x9;                      CASE WHEN substring(Request_Submitted_Date,5,3) IN ('Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec') THEN &#xD;&#xA;                  DATE_FORMAT(STR_TO_DATE(Request_Submitted_Date,'%a %b %d %T IST %Y'),'%c/%e/%Y %k:%i')&#xD;&#xA;                   END&#xD;&#xA;                   END As Request_Submitted_Date,&#xD;&#xA;CASE &#xD;&#xA;           WHEN Source_Company='Virtusa' THEN Request_Last_Updated_Date&#xD;&#xA;           WHEN substring(Request_Last_Updated_Date,1,3) IN ('Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec') THEN&#xD;&#xA;                           CASE WHEN substring(TRIM(Request_Last_Updated_Date),LENGTH(TRIM(Request_Last_Updated_Date))-3,2)>=19 THEN&#xD;&#xA;                                           Date_Format(STR_TO_DATE(Request_Last_Updated_Date, '%b %d, %Y'),'%d-%b-%y')&#xD;&#xA;                           END&#xD;&#xA;           WHEN substring(TRIM(Request_Last_Updated_Date),1,2)>=19 AND substring(TRIM(Request_Last_Updated_Date),5,1)='-' THEN&#xD;&#xA;                           Date_Format(STR_TO_DATE(Request_Last_Updated_Date, '%Y-%m-%d'),'%d-%b-%y')&#xD;&#xA;           WHEN (substring(TRIM(Request_Last_Updated_Date),3,1)='/' OR substring(TRIM(Request_Last_Updated_Date),2,1)='/') &#xD;&#xA;                            AND substring(TRIM(Request_Last_Updated_Date),LENGTH(TRIM(Request_Last_Updated_Date))-3,2)>=19 then&#xD;&#xA;                           Date_Format(STR_TO_DATE(Request_Last_Updated_Date, '%m/%d/%Y'),'%d-%b-%y')&#xD;&#xA;           WHEN (substring(TRIM(Request_Last_Updated_Date),3,1)='/' OR substring(TRIM(Request_Last_Updated_Date),2,1)='/') &#xD;&#xA;                           AND substring(TRIM(Request_Last_Updated_Date),LENGTH(TRIM(Request_Last_Updated_Date))-1,2) IN ('AM','PM') THEN&#xD;&#xA;                           DATE_FORMAT(STR_TO_DATE(Request_Last_Updated_Date, '%m/%d/%Y %h:%i:%s %p'),'%d-%b-%y')&#xD;&#xA;           WHEN (substring(TRIM(Request_Last_Updated_Date),3,1)='-' AND &#xD;&#xA;                             substring(Request_Last_Updated_Date,4,3) IN ('Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec')) THEN&#xD;&#xA;                             DATE_FORMAT(STR_TO_DATE(Request_Last_Updated_Date, '%d-%b-%Y'),'%d-%b-%y')&#xD;&#xA;&#x9;&#x9;   WHEN substring(Request_Last_Updated_Date,1,3) IN ('Sun','Mon','Tue','Wed','Thu','Fri','Sat') THEN&#xD;&#xA;&#x9;                      CASE WHEN substring(Request_Last_Updated_Date,5,3) IN ('Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec') THEN &#xD;&#xA;                  DATE_FORMAT(STR_TO_DATE(Request_Last_Updated_Date,'%a %b %d %T IST %Y'),'%c/%e/%Y %k:%i')&#xD;&#xA;                   END&#xD;&#xA;                   END As Request_Last_Updated_Date,&#xD;&#xA;  `Virtusa_Resource_Request_Details`.`Request_Created_By`,&#xD;&#xA;CASE &#xD;&#xA; WHEN Source_Company='Virtusa' THEN SUBSTRING_INDEX(SEGMENT,'-',-1) ELSE  `Virtusa_Resource_Request_Details`.`Segment` END AS Segment, &#xD;&#xA;  `Virtusa_Resource_Request_Details`.`Comments`, &#xD;&#xA;  `Virtusa_Resource_Request_Details`.`Cycle_Date`, &#xD;&#xA;  `Virtusa_Resource_Request_Details`.`Inserted_Date`, &#xD;&#xA;  `Virtusa_Resource_Request_Details`.`Updated_Date`, &#xD;&#xA;  `Virtusa_Resource_Request_Details`.`Inserted_By`, &#xD;&#xA;  `Virtusa_Resource_Request_Details`.`Updated_By`, &#xD;&#xA;  `Virtusa_Resource_Request_Details`.`Source_Company`,&#xD;&#xA;  `Virtusa_Resource_Request_Details`.`Vacancy_Count`,&#xD;&#xA;  `Virtusa_Resource_Request_Details`.`No_Of_Vacancies_Filled`,&#xD;&#xA;  `Virtusa_Resource_Request_Details`.`No_Of_Open_Vacancies`&#xD;&#xA;FROM `Virtusa_Resource_Request_Details`&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Resource_Request_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Project_Number"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Request_Status"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Request_Type"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Role_Requested"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Name_of_the_Candidate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Option_Status"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CEG"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Practice"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Allocation_FTE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Billing_FTE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Mandatory_Skills"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Start_Date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="End_Date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Allocation_Status"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Shadow_Classification"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Client_Interview_Required"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Working_ATC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Working_State"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Working_City"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Onsite_Offshore"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Min_Role_Tier"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Max_Role_Tier"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Core_Team"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Account_Name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Project_Name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Engagement_Type"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Project_Status"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Presented_No_Candidates"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Presented_Candidate_Names"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Selected__No_Candidates"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Selected_Candidate_Names"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Allocated_Candidate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Allocation_Date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Rejected_No_Candidates"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Rejected_Candidate_Names"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="No_Action_No_Candidates"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="No_Action_N_Candidate_Names"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Week_Required"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Month_Required"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Request_Submitted_Date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Request_Last_Updated_Date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Request_Created_By"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Segment"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Comments"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Cycle_Date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Inserted_Date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Updated_Date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Inserted_By"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Updated_By"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Source_Company"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Vacancy_Count"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="No_Of_Vacancies_Filled"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="No_Of_Open_Vacancies"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Virtusa_Resource_Request_Details" name="tAmazonAuroraInput_1">
+      <column comment="" key="false" length="255" name="Resource_Request_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Project_Number" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Request_Status" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Request_Type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Role_Requested" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Name_of_the_Candidate" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Option_Status" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="CEG" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Practice" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Allocation_FTE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Billing_FTE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Mandatory_Skills" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Start_Date" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="End_Date" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Allocation_Status" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Shadow_Classification" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Client_Interview_Required" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Working_ATC" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Working_State" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Working_City" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Onsite_Offshore" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Min_Role_Tier" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Max_Role_Tier" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Core_Team" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Account_Name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Project_Name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Engagement_Type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Project_Status" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="DC" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Presented_No_Candidates" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Presented_Candidate_Names" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Selected__No_Candidates" nullable="true" originalDbColumnName="Selected _No_Candidates" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Selected_Candidate_Names" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Allocated_Candidate" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Allocation_Date" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Rejected_No_Candidates" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Rejected_Candidate_Names" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="No_Action_No_Candidates" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="No_Action_N_Candidate_Names" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Week_Required" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Month_Required" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Request_Submitted_Date" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Request_Last_Updated_Date" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Request_Created_By" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Segment" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="65535" name="Comments" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="Cycle_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="Inserted_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="Updated_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Inserted_By" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Updated_By" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Source_Company" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Vacancy_Count" nullable="true" pattern="" precision="0" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="No_Of_Vacancies_Filled" nullable="true" pattern="" precision="0" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="No_Of_Open_Vacancies" nullable="true" pattern="" precision="0" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="384" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\EIM\Talend\cmdline\studio\configuration\lib\java" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_n3afsA0TEeaqZ_oEvw1oag-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata comment="" connector="FLOW" label="metadata" name="CreateFinalReport">
+      <column comment="" key="false" length="255" name="Source_Company" nullable="true" pattern="" precision="0" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Resource_Request_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Project_Number" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Request_Status" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Request_Type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Role_Requested" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Name_of_the_Candidate" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Option_Status" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="CEG" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Practice" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Allocation_FTE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Billing_FTE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Mandatory_Skills" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Start_Date" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="End_Date" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Allocation_Status" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Shadow_Classification" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Client_Interview_Required" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Working_ATC" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Working_State" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Working_City" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Onsite_Offshore" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Min_Role_Tier" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Max_Role_Tier" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Core_Team" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Account_Name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Project_Name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Engagement_Type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Project_Status" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="DC" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Presented_No_Candidates" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Presented_Candidate_Names" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Selected__No_Candidates" nullable="true" originalDbColumnName="Selected _No_Candidates" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Selected_Candidate_Names" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Allocated_Candidate" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Allocation_Date" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Rejected_No_Candidates" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Rejected_Candidate_Names" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="No_Action_No_Candidates" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="No_Action_N_Candidate_Names" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Week_Required" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Month_Required" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Request_Submitted_Date" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Request_Last_Updated_Date" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Request_Created_By" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Segment" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="65535" name="Comments" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Vacancy_Count" nullable="true" pattern="" precision="0" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="No_Of_Vacancies_Filled" nullable="true" pattern="" precision="0" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="No_Of_Open_Vacancies" nullable="true" pattern="" precision="0" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="CreateFinalReport" activateCondensedTool="true">
+        <mapperTableEntries name="Source_Company" expression="row1.Source_Company " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Resource_Request_ID" expression="row1.Resource_Request_ID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Project_Number" expression="row1.Project_Number " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Request_Status" expression="row1.Request_Status " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Request_Type" expression="row1.Request_Type " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Role_Requested" expression="row1.Role_Requested " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Name_of_the_Candidate" expression="row1.Name_of_the_Candidate " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Option_Status" expression="row1.Option_Status " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CEG" expression="row1.CEG " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Practice" expression="row1.Practice " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Allocation_FTE" expression="row1.Allocation_FTE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Billing_FTE" expression="row1.Billing_FTE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Mandatory_Skills" expression="row1.Mandatory_Skills " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Start_Date" expression="row1.Start_Date " type="id_String" nullable="true"/>
+        <mapperTableEntries name="End_Date" expression="row1.End_Date " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Allocation_Status" expression="row1.Allocation_Status " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Shadow_Classification" expression="row1.Shadow_Classification " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Client_Interview_Required" expression="row1.Client_Interview_Required " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Working_ATC" expression="row1.Working_ATC " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Working_State" expression="row1.Working_State " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Working_City" expression="row1.Working_City " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Onsite_Offshore" expression="row1.Onsite_Offshore " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Min_Role_Tier" expression="row1.Min_Role_Tier " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Max_Role_Tier" expression="row1.Max_Role_Tier " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Core_Team" expression="row1.Core_Team " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Account_Name" expression="row1.Account_Name " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Project_Name" expression="row1.Project_Name " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Engagement_Type" expression="row1.Engagement_Type " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Project_Status" expression="row1.Project_Status " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DC" expression="row1.DC " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Presented_No_Candidates" expression="row1.Presented_No_Candidates " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Presented_Candidate_Names" expression="row1.Presented_Candidate_Names " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Selected__No_Candidates" expression="row1.Selected__No_Candidates " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Selected_Candidate_Names" expression="row1.Selected_Candidate_Names " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Allocated_Candidate" expression="row1.Allocated_Candidate " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Allocation_Date" expression="row1.Allocation_Date " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Rejected_No_Candidates" expression="row1.Rejected_No_Candidates " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Rejected_Candidate_Names" expression="row1.Rejected_Candidate_Names " type="id_String" nullable="true"/>
+        <mapperTableEntries name="No_Action_No_Candidates" expression="row1.No_Action_No_Candidates " type="id_String" nullable="true"/>
+        <mapperTableEntries name="No_Action_N_Candidate_Names" expression="row1.No_Action_N_Candidate_Names " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Week_Required" expression="row1.Week_Required " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Month_Required" expression="row1.Month_Required " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Request_Submitted_Date" expression="row1.Request_Submitted_Date " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Request_Last_Updated_Date" expression="row1.Request_Last_Updated_Date " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Request_Created_By" expression="row1.Request_Created_By " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Segment" expression="row1.Segment " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Comments" expression="row1.Comments " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Vacancy_Count" expression="row1.Vacancy_Count " type="id_String" nullable="true"/>
+        <mapperTableEntries name="No_Of_Vacancies_Filled" expression="row1.No_Of_Vacancies_Filled " type="id_String" nullable="true"/>
+        <mapperTableEntries name="No_Of_Open_Vacancies" expression="row1.No_Of_Open_Vacancies " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="Resource_Request_ID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Project_Number" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Request_Status" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Request_Type" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Role_Requested" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Name_of_the_Candidate" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Option_Status" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CEG" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Practice" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Allocation_FTE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Billing_FTE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Mandatory_Skills" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Start_Date" type="id_String" nullable="true"/>
+        <mapperTableEntries name="End_Date" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Allocation_Status" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Shadow_Classification" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Client_Interview_Required" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Working_ATC" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Working_State" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Working_City" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Onsite_Offshore" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Min_Role_Tier" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Max_Role_Tier" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Core_Team" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Account_Name" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Project_Name" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Engagement_Type" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Project_Status" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DC" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Presented_No_Candidates" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Presented_Candidate_Names" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Selected__No_Candidates" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Selected_Candidate_Names" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Allocated_Candidate" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Allocation_Date" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Rejected_No_Candidates" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Rejected_Candidate_Names" type="id_String" nullable="true"/>
+        <mapperTableEntries name="No_Action_No_Candidates" type="id_String" nullable="true"/>
+        <mapperTableEntries name="No_Action_N_Candidate_Names" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Week_Required" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Month_Required" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Request_Submitted_Date" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Request_Last_Updated_Date" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Request_Created_By" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Segment" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Comments" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Cycle_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Inserted_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Updated_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Inserted_By" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Updated_By" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Source_Company" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Vacancy_Count" type="id_String" nullable="true"/>
+        <mapperTableEntries name="No_Of_Vacancies_Filled" type="id_String" nullable="true"/>
+        <mapperTableEntries name="No_Of_Open_Vacancies" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\EIM\Talend\cmdline\studio\configuration\lib\java" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Talend_Workspace/vp_rm_files/Master_Reports/Resource_Request_Final_Report_&quot;+TalendDate.getDate(&quot;CCYYMMDD&quot;)+&quot;.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;windows-1252&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFileOutputDelimited_1">
+      <column comment="" key="false" length="255" name="Source_Company" nullable="true" pattern="" precision="0" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Resource_Request_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Project_Number" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Request_Status" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Request_Type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Role_Requested" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Name_of_the_Candidate" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Option_Status" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="CEG" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Practice" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Allocation_FTE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Billing_FTE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Mandatory_Skills" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Start_Date" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="End_Date" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Allocation_Status" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Shadow_Classification" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Client_Interview_Required" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Working_ATC" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Working_State" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Working_City" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Onsite_Offshore" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Min_Role_Tier" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Max_Role_Tier" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Core_Team" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Account_Name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Project_Name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Engagement_Type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Project_Status" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="DC" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Presented_No_Candidates" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Presented_Candidate_Names" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Selected__No_Candidates" nullable="true" originalDbColumnName="Selected _No_Candidates" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Selected_Candidate_Names" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Allocated_Candidate" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Allocation_Date" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Rejected_No_Candidates" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Rejected_Candidate_Names" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="No_Action_No_Candidates" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="No_Action_N_Candidate_Names" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Week_Required" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Month_Required" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Request_Submitted_Date" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Request_Last_Updated_Date" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Request_Created_By" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Segment" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="65535" name="Comments" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Vacancy_Count" nullable="true" pattern="" precision="0" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="No_Of_Vacancies_Filled" nullable="true" pattern="" precision="0" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="No_Of_Open_Vacancies" nullable="true" pattern="" precision="0" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="Log_History" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="96" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Log_History_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="CHECK" name="DUMMY" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="START" value="true" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="LABEL" value="Log_History"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tAmazonAuroraInput_1" offsetLabelX="0" offsetLabelY="0" source="tAmazonAuroraInput_1" target="tMap_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Resource_Request_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Project_Number"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Request_Status"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Request_Type"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Role_Requested"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Name_of_the_Candidate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Option_Status"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CEG"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Practice"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Allocation_FTE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Billing_FTE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Mandatory_Skills"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Start_Date"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="End_Date"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Allocation_Status"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Shadow_Classification"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Client_Interview_Required"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Working_ATC"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Working_State"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Working_City"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Onsite_Offshore"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Min_Role_Tier"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Max_Role_Tier"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Core_Team"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Account_Name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Project_Name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Engagement_Type"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Project_Status"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DC"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Presented_No_Candidates"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Presented_Candidate_Names"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Selected__No_Candidates"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Selected_Candidate_Names"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Allocated_Candidate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Allocation_Date"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Rejected_No_Candidates"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Rejected_Candidate_Names"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="No_Action_No_Candidates"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="No_Action_N_Candidate_Names"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Week_Required"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Month_Required"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Request_Submitted_Date"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Request_Last_Updated_Date"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Request_Created_By"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Segment"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Comments"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Cycle_Date"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Inserted_Date"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Updated_Date"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Inserted_By"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Updated_By"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Source_Company"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Vacancy_Count"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="No_Of_Vacancies_Filled"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="No_Of_Open_Vacancies"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="CreateFinalReport" lineStyle="0" metaname="CreateFinalReport" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tFileOutputDelimited_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Resource_Request_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Project_Number"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Request_Status"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Request_Type"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Role_Requested"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Name_of_the_Candidate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Option_Status"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CEG"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Practice"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Allocation_FTE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Billing_FTE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Mandatory_Skills"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Start_Date"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="End_Date"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Allocation_Status"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Shadow_Classification"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Client_Interview_Required"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Working_ATC"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Working_State"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Working_City"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Onsite_Offshore"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Min_Role_Tier"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Max_Role_Tier"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Core_Team"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Account_Name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Project_Name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Engagement_Type"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Project_Status"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DC"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Presented_No_Candidates"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Presented_Candidate_Names"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Selected__No_Candidates"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Selected_Candidate_Names"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Allocated_Candidate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Allocation_Date"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Rejected_No_Candidates"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Rejected_Candidate_Names"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="No_Action_No_Candidates"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="No_Action_N_Candidate_Names"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Week_Required"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Month_Required"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Request_Submitted_Date"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Request_Last_Updated_Date"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Request_Created_By"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Segment"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Comments"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Source_Company"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Vacancy_Count"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="No_Of_Vacancies_Filled"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="No_Of_Open_Vacancies"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="CreateFinalReport" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tAmazonAuroraInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Log_History_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>
