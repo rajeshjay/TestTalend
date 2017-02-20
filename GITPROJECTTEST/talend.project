@@ -1959,6 +1959,35 @@
       <relatedItems xmi:id="_W4dNqPdaEeapJ_2SfFXRMw" id="DataTypeUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_W4dNqfdaEeapJ_2SfFXRMw" id="__D7uAPKvEea8svXJIesBYg - DEPARTMENTS" version="Latest" type="schema"/>
     </ItemsRelations>
+    <ItemsRelations xmi:id="_pRylQPduEeapJ_2SfFXRMw">
+      <baseItem xmi:id="_pRylQfduEeapJ_2SfFXRMw" id="_3dQ_8PUSEeacJ60ZObgIOA" version="0.1" type="job"/>
+      <relatedItems xmi:id="_pRylQvduEeapJ_2SfFXRMw" id="_ACuIwPdWEeapJ_2SfFXRMw" version="Latest" type="property"/>
+      <relatedItems xmi:id="_pRylQ_duEeapJ_2SfFXRMw" id="__D7uAPKvEea8svXJIesBYg" version="Latest" type="property"/>
+      <relatedItems xmi:id="_pRylRPduEeapJ_2SfFXRMw" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_pRylRfduEeapJ_2SfFXRMw" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_pRylRvduEeapJ_2SfFXRMw" id="tic_word_titleCase" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_pRylR_duEeapJ_2SfFXRMw" id="DataMasking" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_pRylSPduEeapJ_2SfFXRMw" id="DemoRoutines" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_pRylSfduEeapJ_2SfFXRMw" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_pRylSvduEeapJ_2SfFXRMw" id="DqStringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_pRylS_duEeapJ_2SfFXRMw" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_pRylTPduEeapJ_2SfFXRMw" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_pRylTfduEeapJ_2SfFXRMw" id="DQTechnical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_pRylTvduEeapJ_2SfFXRMw" id="IpaasFileUtil" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_pRylT_duEeapJ_2SfFXRMw" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_pRylUPduEeapJ_2SfFXRMw" id="Transformation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_pRylUfduEeapJ_2SfFXRMw" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_pRylUvduEeapJ_2SfFXRMw" id="DQ_METHODS" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_pRylU_duEeapJ_2SfFXRMw" id="DataQuality" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_pRylVPduEeapJ_2SfFXRMw" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_pRylVfduEeapJ_2SfFXRMw" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_pRylVvduEeapJ_2SfFXRMw" id="DataQualityDependencies" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_pRylV_duEeapJ_2SfFXRMw" id="MDM" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_pRylWPduEeapJ_2SfFXRMw" id="GetRandomPhoneNum" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_pRylWfduEeapJ_2SfFXRMw" id="DataTypeUtil" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_pRylWvduEeapJ_2SfFXRMw" id="_ACuIwPdWEeapJ_2SfFXRMw - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_pRylW_duEeapJ_2SfFXRMw" id="__D7uAPKvEea8svXJIesBYg - DEPARTMENT_SCD" version="Latest" type="schema"/>
+    </ItemsRelations>
     <migrationTask xmi:id="_HgmHYPKnEea8svXJIesBYg" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_HgmHYfKnEea8svXJIesBYg" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_HgmHYvKnEea8svXJIesBYg" id="org.talend.repository.model.migration.CleanFoldersMigrationTask" breaks="5.1.1" version="5.1.2" status="ok"/>
