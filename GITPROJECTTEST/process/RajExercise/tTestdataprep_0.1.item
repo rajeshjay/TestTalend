@@ -236,7 +236,7 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="StartDate"/>
       <elementValue elementRef="ARRAY" value="TalendDate.getCurrentDate()"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="EndDate"/>
-      <elementValue elementRef="ARRAY" value="TalendDate.getRandomDate(&quot;2007-01-01&quot; ,&quot;2008-12-31&quot; )"/>
+      <elementValue elementRef="ARRAY" value="TalendDate.getRandomDate(&quot;9999-12-31&quot; ,&quot;9999-12-31&quot; )"/>
     </elementParameter>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
