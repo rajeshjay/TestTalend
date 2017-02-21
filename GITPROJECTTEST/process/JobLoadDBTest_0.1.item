@@ -150,7 +150,7 @@
     <elementParameter field="TEXT" name="TYPE" value="Oracle" show="false"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;XE&quot;"/>
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="TABLESCHEMA" value="&quot;system&quot;"/>
+    <elementParameter field="TEXT" name="TABLESCHEMA" value="&quot;HR&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;system&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" value="XOWw2jdQq/4="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;Testload1&quot;"/>
