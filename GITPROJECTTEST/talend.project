@@ -2070,6 +2070,31 @@
       <relatedItems xmi:id="_yR6shvgzEeaS3Zkw8z1fIA" id="GetRandomPhoneNum" version="Latest" type="routine"/>
       <relatedItems xmi:id="_yR6sh_gzEeaS3Zkw8z1fIA" id="DataTypeUtil" version="Latest" type="routine"/>
     </ItemsRelations>
+    <ItemsRelations xmi:id="_4xFWAPg4EeaS3Zkw8z1fIA">
+      <baseItem xmi:id="_4xFWAfg4EeaS3Zkw8z1fIA" id="_i_U54Pg4EeaS3Zkw8z1fIA" version="0.1" type="joblet"/>
+      <relatedItems xmi:id="_4xFWAvg4EeaS3Zkw8z1fIA" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_4xFWA_g4EeaS3Zkw8z1fIA" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_4xFWBPg4EeaS3Zkw8z1fIA" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_4xFWBfg4EeaS3Zkw8z1fIA" id="tic_word_titleCase" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_4xFWBvg4EeaS3Zkw8z1fIA" id="DataMasking" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_4xFWB_g4EeaS3Zkw8z1fIA" id="DemoRoutines" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_4xFWCPg4EeaS3Zkw8z1fIA" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_4xFWCfg4EeaS3Zkw8z1fIA" id="Transformation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_4xFWCvg4EeaS3Zkw8z1fIA" id="DqStringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_4xFWC_g4EeaS3Zkw8z1fIA" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_4xFWDPg4EeaS3Zkw8z1fIA" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_4xFWDfg4EeaS3Zkw8z1fIA" id="DQ_METHODS" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_4xFWDvg4EeaS3Zkw8z1fIA" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_4xFWD_g4EeaS3Zkw8z1fIA" id="DataQuality" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_4xFWEPg4EeaS3Zkw8z1fIA" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_4xFWEfg4EeaS3Zkw8z1fIA" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_4xFWEvg4EeaS3Zkw8z1fIA" id="DQTechnical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_4xFWE_g4EeaS3Zkw8z1fIA" id="IpaasFileUtil" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_4xFWFPg4EeaS3Zkw8z1fIA" id="DataQualityDependencies" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_4xFWFfg4EeaS3Zkw8z1fIA" id="MDM" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_4xFWFvg4EeaS3Zkw8z1fIA" id="GetRandomPhoneNum" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_4xFWF_g4EeaS3Zkw8z1fIA" id="DataTypeUtil" version="Latest" type="routine"/>
+    </ItemsRelations>
     <migrationTask xmi:id="_HgmHYPKnEea8svXJIesBYg" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_HgmHYfKnEea8svXJIesBYg" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_HgmHYvKnEea8svXJIesBYg" id="org.talend.repository.model.migration.CleanFoldersMigrationTask" breaks="5.1.1" version="5.1.2" status="ok"/>
