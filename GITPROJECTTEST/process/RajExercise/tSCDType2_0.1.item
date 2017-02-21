@@ -235,33 +235,33 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="out1">
-      <column comment="Primary key column of departments table." key="true" length="4" name="DEPARTMENT_ID" nullable="false" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="A not null column that shows name of a department. Administration,&#xA;Marketing, Purchasing, Human Resources, Shipping, IT, Executive, Public&#xA;Relations, Sales, Finance, and Accounting. " key="false" length="30" name="DEPARTMENT_NAME" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="Location id where a department is located. Foreign key to location_id column of locations table." key="false" length="4" name="LOCATION_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="Manager_id of a department. Foreign key to employee_id column of employees table. The manager_id column of the employee table references this column." key="false" length="6" name="MANAGER_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="NewDeptid" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="Column1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Column2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Column3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="true" length="4" name="DEPARTMENT_ID" nullable="false" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="DEPARTMENT_NAME" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="MANAGER_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="LOCATION_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="STARTDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="ENDDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="NewDeptid" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DEC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" key="false" length="15" name="NewDeptName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="NewManagerID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DEC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" key="false" length="4" name="Newlocationid" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DEC" type="id_BigDecimal" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var">
-        <mapperTableEntries name="var1" expression="row1.DEPARTMENT_NAME != row2.Column1 ||&#xD;&#xA;row1.MANAGER_ID != row2.Column2 ||&#xD;&#xA;row1.LOCATION_ID != row2.Column3 ? &quot;Y&quot;:&quot;N&quot; " type="id_String"/>
+        <mapperTableEntries name="var1" expression="row1.Column1 != row2.DEPARTMENT_NAME ||&#xD;&#xA;row1.Column2 != row2.MANAGER_ID  ||&#xD;&#xA;row1.Column3 != row2.LOCATION_ID ? &quot;Y&quot;:&quot;N&quot; " type="id_String"/>
       </varTables>
       <outputTables sizeState="INTERMEDIATE" name="out1" expressionFilter="Var.var1.equals(&quot;Y&quot;)" activateExpressionFilter="true">
-        <mapperTableEntries name="DEPARTMENT_ID" expression="row1.DEPARTMENT_ID " type="id_BigDecimal"/>
-        <mapperTableEntries name="DEPARTMENT_NAME" expression="row1.DEPARTMENT_NAME " type="id_String"/>
-        <mapperTableEntries name="LOCATION_ID" expression="row1.LOCATION_ID " type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="MANAGER_ID" expression="row1.MANAGER_ID " type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="STARTDATE" expression="row1.STARTDATE " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="ENDDATE" expression="row1.ENDDATE " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="NewDeptid" expression="row2.NewDeptid " type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="NewDeptName" expression="row2.Column1 " type="id_String" nullable="true"/>
-        <mapperTableEntries name="NewManagerID" expression="row2.Column2 " type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="Newlocationid" expression="row2.Column3 " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="NewDeptid" expression="row1.NewDeptid " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="Column1" expression="row1.Column1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Column2" expression="row1.Column2 " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="Column3" expression="row1.Column3 " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="DEPARTMENT_ID" expression="row2.DEPARTMENT_ID " type="id_BigDecimal"/>
+        <mapperTableEntries name="DEPARTMENT_NAME" expression="row2.DEPARTMENT_NAME " type="id_String"/>
+        <mapperTableEntries name="MANAGER_ID" expression="row2.MANAGER_ID " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="LOCATION_ID" expression="row2.LOCATION_ID " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="STARTDATE" expression="row2.STARTDATE " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ENDDATE" expression="row2.ENDDATE " type="id_Date" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="NewDeptid" type="id_BigDecimal" nullable="true"/>
@@ -326,16 +326,16 @@
         <mapperTableEntries name="ENDDATE" expression="TalendDate.addDate(TalendDate.getCurrentDate(),-1,&quot;DD&quot;) " type="id_Date" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="out1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="NewDeptid" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="Column1" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Column2" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="Column3" type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="DEPARTMENT_ID" type="id_BigDecimal"/>
         <mapperTableEntries name="DEPARTMENT_NAME" type="id_String"/>
-        <mapperTableEntries name="LOCATION_ID" type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="MANAGER_ID" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="LOCATION_ID" type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="STARTDATE" type="id_Date" nullable="true"/>
         <mapperTableEntries name="ENDDATE" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="NewDeptid" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="NewDeptName" type="id_String" nullable="true"/>
-        <mapperTableEntries name="NewManagerID" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="Newlocationid" type="id_BigDecimal" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
@@ -514,6 +514,15 @@
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="ENDDATE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Column2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Column3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Column1"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
