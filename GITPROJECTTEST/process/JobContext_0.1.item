@@ -5,6 +5,7 @@
     <contextParameter comment="" name="host" prompt="host?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="port" prompt="port?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="database" prompt="database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="schema" prompt="schema?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="username" prompt="username?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="password" prompt="password?" promptNeeded="false" type="id_Password" value=""/>
     <contextParameter comment="" name="filename" prompt="filename?" promptNeeded="false" type="id_File" value=""/>
@@ -15,6 +16,7 @@
     <contextParameter comment="" name="host" prompt="host?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="port" prompt="port?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="database" prompt="database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="schema" prompt="schema?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="username" prompt="username?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="password" prompt="password?" promptNeeded="false" type="id_Password" value=""/>
     <contextParameter comment="" name="filename" prompt="filename?" promptNeeded="true" type="id_File" value="C:/Users/training/Test_Files/Test_con.txt"/>
@@ -25,6 +27,7 @@
     <contextParameter comment="" name="host" prompt="host?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="port" prompt="port?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="database" prompt="database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="schema" prompt="schema?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="username" prompt="username?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="password" prompt="password?" promptNeeded="false" type="id_Password" value=""/>
     <contextParameter comment="" name="filename" prompt="filename?" promptNeeded="false" type="id_File" value=""/>
