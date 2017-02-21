@@ -573,42 +573,22 @@
     <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
     <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
     <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="LOCATION_ID"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ID"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="STREET_ADDRESS"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="POSTAL_CODE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CITY"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="STATE_PROVINCE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COUNTRY_ID"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAME"/>
       <elementValue elementRef="LENGTH" value="10"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="LOCATIONS" name="tLogRow_3">
-      <column comment="Primary key of locations table" key="true" length="4" name="LOCATION_ID" nullable="false" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value="Primary key of locations table"/>
+    <metadata connector="FLOW" label="BHARATH_TEST" name="tLogRow_3">
+      <column comment="" key="false" length="22" name="ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
       </column>
-      <column comment="Street address of an office, warehouse, or production site of a company.&#xA;Contains building number and street name" key="false" length="40" name="STREET_ADDRESS" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value="Street address of an office, warehouse, or production site of a company.&#xA;Contains building number and street name"/>
+      <column comment="" key="false" length="50" name="NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
       </column>
-      <column comment="Postal code of the location of an office, warehouse, or production site&#xA;of a company. " key="false" length="12" name="POSTAL_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value="Postal code of the location of an office, warehouse, or production site&#xA;of a company. "/>
-      </column>
-      <column comment="A not null column that shows city where an office, warehouse, or&#xA;production site of a company is located. " key="false" length="30" name="CITY" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value="A not null column that shows city where an office, warehouse, or&#xA;production site of a company is located. "/>
-      </column>
-      <column comment="State or Province where an office, warehouse, or production site of a&#xA;company is located." key="false" length="25" name="STATE_PROVINCE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value="State or Province where an office, warehouse, or production site of a&#xA;company is located."/>
-      </column>
-      <column comment="Country where an office, warehouse, or production site of a company is&#xA;located. Foreign key to country_id column of the countries table." key="false" length="2" name="COUNTRY_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value="Country where an office, warehouse, or production site of a company is&#xA;located. Foreign key to country_id column of the countries table."/>
-      </column>
-      <additionalProperties key="Comment" value="Locations table that contains specific address of a specific office,&#xA;warehouse, and/or production site of a company. Does not store addresses /&#xA;locations of customers. Contains 23 rows; references with the&#xA;departments and countries tables. "/>
+      <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tOracleConnection_1" offsetLabelX="0" offsetLabelY="0" source="tOracleConnection_1" target="tOracleInput_2">
