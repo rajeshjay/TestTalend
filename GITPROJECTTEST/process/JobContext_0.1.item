@@ -258,7 +258,7 @@
     <elementParameter field="TEXT" name="PORT" value="context.port"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.database"/>
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.schema"/>
     <elementParameter field="TEXT" name="USER" value="context.username"/>
     <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kuczSBOgoJ7Ub24fQgd+SRSj"/>
     <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:oracle:oci:/@talend&quot;" show="false"/>
