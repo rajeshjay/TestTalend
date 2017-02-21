@@ -307,13 +307,13 @@
       <column comment="" key="false" length="7" name="ENDDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out3">
         <mapperTableEntries name="Department_id" expression="out1.NewDeptid " type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="Department_Name" expression="out1.NewDeptName " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Location_id" expression="out1.NewManagerID " type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="Manager_id" expression="out1.Newlocationid " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="Department_Name" expression="out1.Column1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Location_id" expression="out1.Column2 " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="Manager_id" expression=" out1.Column3 " type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="StartDate" expression="TalendDate.getCurrentDate() " type="id_Date" nullable="true"/>
         <mapperTableEntries name="EndDate" expression="TalendDate.parseDate(&quot;yyyy-MM-dd&quot;, &quot;2999-12-31&quot;) " type="id_Date" nullable="true"/>
       </outputTables>
