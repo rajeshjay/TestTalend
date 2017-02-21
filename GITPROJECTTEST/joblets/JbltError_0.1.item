@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties" xmlns:model="http://www.talend.com/joblet.ecore">
+  <model:JobletProcess>
+    <parameters>
+      <routinesParameter id="_IergQ_KnEea8svXJIesBYg" name="DQTechnical"/>
+      <routinesParameter id="_IeFDU_KnEea8svXJIesBYg" name="DataMasking"/>
+      <routinesParameter id="_Ie-bMPKnEea8svXJIesBYg" name="DataOperation"/>
+      <routinesParameter id="_IeYlV_KnEea8svXJIesBYg" name="DataQualityDependencies"/>
+      <routinesParameter id="_IeYlU_KnEea8svXJIesBYg" name="DataQuality"/>
+      <routinesParameter id="_IehvRfKnEea8svXJIesBYg" name="DqStringHandling"/>
+      <routinesParameter id="_HpEt8PKnEea8svXJIesBYg" name="MDM"/>
+      <routinesParameter id="_IfkREPKnEea8svXJIesBYg" name="Mathematical"/>
+      <routinesParameter id="_IfuCE_KnEea8svXJIesBYg" name="Numeric"/>
+      <routinesParameter id="_If3zEPKnEea8svXJIesBYg" name="Relational"/>
+      <routinesParameter id="_IergR_KnEea8svXJIesBYg" name="SQLike"/>
+      <routinesParameter id="_If3zFPKnEea8svXJIesBYg" name="StringHandling"/>
+      <routinesParameter id="_IgA9APKnEea8svXJIesBYg" name="TalendDataGenerator"/>
+      <routinesParameter id="_IgT38_KnEea8svXJIesBYg" name="TalendDate"/>
+      <routinesParameter id="_Igdo8PKnEea8svXJIesBYg" name="TalendString"/>
+      <routinesParameter id="_dnpOQD3HEeO7UMG_YqAtyA" name="DQ_METHODS"/>
+      <routinesParameter id="_tCAnQMeYEeSrE9pbd6oYnw" name="DataTypeUtil"/>
+      <routinesParameter id="_8qwkYFjNEdyj6eiqDt60Og" name="DemoRoutines"/>
+      <routinesParameter id="_HKXfQGIZEd26GZmhFZLTPA" name="GetRandomPhoneNum"/>
+      <routinesParameter id="_PESjcCYYEeW5gZVXtfxI4A" name="IpaasFileUtil"/>
+      <routinesParameter id="_JsAZQHlHEeS5M-4wmV8XNg" name="Transformation"/>
+      <routinesParameter id="_1cAIgMywEeSadJSYhJEDKA" name="tic_word_titleCase"/>
+    </parameters>
+  </model:JobletProcess>
+  <TalendProperties:ByteArray/>
+</xmi:XMI>
