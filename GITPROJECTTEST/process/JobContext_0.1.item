@@ -262,14 +262,12 @@
     <elementParameter field="TEXT" name="USER" value="context.username"/>
     <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kuczSBOgoJ7Ub24fQgd+SRSj"/>
     <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:oracle:oci:/@talend&quot;" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="__D7uAPKvEea8svXJIesBYg - LOCATIONS" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;LOCATIONS&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;  &quot;+context.schema+&quot;.LOCATIONS.LOCATION_ID, &#xA;  &quot;+context.schema+&quot;.LOCATIONS.STREET_ADDRESS, &#xA;  &quot;+context.schema+&quot;.LOCATIONS.POSTAL_CODE, &#xA;  &quot;+context.schema+&quot;.LOCATIONS.CITY, &#xA;  &quot;+context.schema+&quot;.LOCATIONS.STATE_PROVINCE, &#xA;  &quot;+context.schema+&quot;.LOCATIONS.COUNTRY_ID&#xA;FROM &quot;+context.schema+&quot;.LOCATIONS&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&#xD;&#xA;&quot;SELECT &#xA;  &quot;+context.schema+&quot;.LOCATIONS.LOCATION_ID, &#xA;  &quot;+context.schema+&quot;.LOCATIONS.STREET_ADDRESS, &#xA;  &quot;+context.schema+&quot;.LOCATIONS.POSTAL_CODE, &#xA;  &quot;+context.schema+&quot;.LOCATIONS.CITY, &#xA;  &quot;+context.schema+&quot;.LOCATIONS.STATE_PROVINCE, &#xA;  &quot;+context.schema+&quot;.LOCATIONS.COUNTRY_ID&#xA;FROM &quot;+context.schema+&quot;.LOCATIONS&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
