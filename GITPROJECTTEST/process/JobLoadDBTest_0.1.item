@@ -122,7 +122,7 @@
   </parameters>
   <node componentName="tRowGenerator" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRowGenerator_1" show="false"/>
-    <elementParameter field="TEXT" name="NB_ROWS" value="100000" show="false"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="10000" show="false"/>
     <elementParameter field="TABLE" name="VALUES" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="Name"/>
       <elementValue elementRef="ARRAY" value="TalendString.getAsciiRandomString(6 )"/>
@@ -136,7 +136,7 @@
     <metadata connector="FLOW" name="tRowGenerator_1">
       <column comment="" key="false" length="-1" name="Name" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="100" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Exp" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="100" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Ident" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="Ident" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tOracleOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="96">
