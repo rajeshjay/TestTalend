@@ -92,6 +92,7 @@
       <elementParameter field="CHECK" name="CATCH_TDIE" value="true"/>
       <elementParameter field="CHECK" name="CATCH_TWARN" value="true"/>
       <elementParameter field="CHECK" name="CATCH_TACTIONFAILURE" value="true"/>
+      <elementParameter field="TEXT" name="LABEL" value="tLogCatcher_1"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
       <metadata connector="FLOW" name="tLogCatcher_1">
         <column defaultValue="" key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
@@ -136,6 +137,7 @@
       <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
       <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
       <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="tFileOutputDelimited_1"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
       <metadata connector="FLOW" name="tFileOutputDelimited_1">
         <column defaultValue="" key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
@@ -154,6 +156,7 @@
     </node>
     <node componentName="tStatCatcher" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="448" posY="96">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tStatCatcher_1" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="tStatCatcher_1"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
       <metadata connector="FLOW" name="tStatCatcher_1">
         <column defaultValue="" key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
@@ -200,6 +203,7 @@
       <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
       <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
       <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="tFileOutputDelimited_2"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
       <metadata connector="FLOW" name="tFileOutputDelimited_2">
         <column defaultValue="" key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
