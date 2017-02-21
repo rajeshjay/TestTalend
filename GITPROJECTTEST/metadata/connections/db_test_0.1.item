@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
-  <TalendMetadata:DatabaseConnection xmi:id="_EXItAPKwEea8svXJIesBYg" name="db_test" id="__D7uAPKvEea8svXJIesBYg" label="db_test" dataPackage="__TbhIPgWEeaS3Zkw8z1fIA __TbhIfgWEeaS3Zkw8z1fIA __TbhIvgWEeaS3Zkw8z1fIA __TbhI_gWEeaS3Zkw8z1fIA __TbhJPgWEeaS3Zkw8z1fIA __TbhJvgWEeaS3Zkw8z1fIA __TbhJ_gWEeaS3Zkw8z1fIA __TbhKPgWEeaS3Zkw8z1fIA __TbhKvgWEeaS3Zkw8z1fIA __TbhK_gWEeaS3Zkw8z1fIA _Ejo39fKwEea8svXJIesBYg _Ejo3-fKwEea8svXJIesBYg" contextName="Default" DatabaseType="Oracle with SID" DriverJarPath="" DriverClass="oracle.jdbc.OracleDriver" URL="jdbc:oracle:thin:@localhost:1521:XE" dbVersionString="ORACLE_11" Port="1521" Username="system" Password="RX/CTwlUNiA=" ServerName="localhost" DatasourceName="" FileFieldName="" SID="XE" SqlSynthax="SQL Syntax" StringQuote="XE&quot;" DbmsId="oracle_id" ProductId="ORACLE" DBRootPath="" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="">
+  <TalendMetadata:DatabaseConnection xmi:id="_EXItAPKwEea8svXJIesBYg" name="db_test" id="__D7uAPKvEea8svXJIesBYg" label="db_test" dataPackage="_TlP64PgfEeaS3Zkw8z1fIA _TlP64fgfEeaS3Zkw8z1fIA _TlP64vgfEeaS3Zkw8z1fIA _TlP64_gfEeaS3Zkw8z1fIA _TlP65PgfEeaS3Zkw8z1fIA _TlP65vgfEeaS3Zkw8z1fIA _TlP65_gfEeaS3Zkw8z1fIA _TlP66PgfEeaS3Zkw8z1fIA _TlP66vgfEeaS3Zkw8z1fIA _TlP66_gfEeaS3Zkw8z1fIA _Ejo39fKwEea8svXJIesBYg _Ejo3-fKwEea8svXJIesBYg" ContextMode="true" ContextId="_PeHGYPgfEeaS3Zkw8z1fIA" contextName="Default" DatabaseType="Oracle with SID" DriverJarPath="" DriverClass="oracle.jdbc.OracleDriver" URL="jdbc:oracle:thin:@localhost:1521:XE" dbVersionString="ORACLE_11" Port="context.db_test_Port" Username="context.db_test_Login" Password="context.db_test_Password" ServerName="context.db_test_Server" DatasourceName="" FileFieldName="" SID="context.db_test_Sid" SqlSynthax="SQL Syntax" StringQuote="XE&quot;" DbmsId="oracle_id" ProductId="ORACLE" DBRootPath="" AdditionalParams="context.db_test_AdditionalParams" StandardSQL="true" SQLMode="false" UiSchema="context.db_test_Schema">
     <taggedValue xmi:id="_EXSeAPKwEea8svXJIesBYg" tag="Is Conn Need Reload" value="false"/>
     <taggedValue xmi:id="_EZEmsPKwEea8svXJIesBYg" tag="package filter" value=""/>
     <taggedValue xmi:id="_EZOXsPKwEea8svXJIesBYg" tag="Status" value=""/>
@@ -12,18 +12,18 @@
     <taggedValue xmi:id="_EZhSoPKwEea8svXJIesBYg" tag="DB ProductName" value="Oracle"/>
     <taggedValue xmi:id="_EZhSofKwEea8svXJIesBYg" tag="DB ProductVersion" value="Oracle Database 11g Release 11.1.0.0.0 - Production"/>
     <taggedValue xmi:id="_EZhSovKwEea8svXJIesBYg" tag="DB IdentifierQuoteString" value="&quot;"/>
-    <parameters xmi:id="_EXSeAfKwEea8svXJIesBYg" key="CONN_PARA_KEY_USERNAME" value="system"/>
+    <parameters xmi:id="_EXSeAfKwEea8svXJIesBYg" key="CONN_PARA_KEY_USERNAME" value="context.db_test_Login"/>
   </TalendMetadata:DatabaseConnection>
-  <orgomg.cwm.resource.relational:Schema xmi:id="__TbhIPgWEeaS3Zkw8z1fIA" name="ANONYMOUS" dataManager="_EXItAPKwEea8svXJIesBYg"/>
-  <orgomg.cwm.resource.relational:Schema xmi:id="__TbhIfgWEeaS3Zkw8z1fIA" name="APEX_040000" dataManager="_EXItAPKwEea8svXJIesBYg"/>
-  <orgomg.cwm.resource.relational:Schema xmi:id="__TbhIvgWEeaS3Zkw8z1fIA" name="APEX_PUBLIC_USER" dataManager="_EXItAPKwEea8svXJIesBYg"/>
-  <orgomg.cwm.resource.relational:Schema xmi:id="__TbhI_gWEeaS3Zkw8z1fIA" name="CTXSYS" dataManager="_EXItAPKwEea8svXJIesBYg"/>
-  <orgomg.cwm.resource.relational:Schema xmi:id="__TbhJPgWEeaS3Zkw8z1fIA" name="FLOWS_FILES" dataManager="_EXItAPKwEea8svXJIesBYg"/>
-  <orgomg.cwm.resource.relational:Schema xmi:id="__TbhJvgWEeaS3Zkw8z1fIA" name="MDSYS" dataManager="_EXItAPKwEea8svXJIesBYg"/>
-  <orgomg.cwm.resource.relational:Schema xmi:id="__TbhJ_gWEeaS3Zkw8z1fIA" name="OUTLN" dataManager="_EXItAPKwEea8svXJIesBYg"/>
-  <orgomg.cwm.resource.relational:Schema xmi:id="__TbhKPgWEeaS3Zkw8z1fIA" name="SYS" dataManager="_EXItAPKwEea8svXJIesBYg"/>
-  <orgomg.cwm.resource.relational:Schema xmi:id="__TbhKvgWEeaS3Zkw8z1fIA" name="XDB" dataManager="_EXItAPKwEea8svXJIesBYg"/>
-  <orgomg.cwm.resource.relational:Schema xmi:id="__TbhK_gWEeaS3Zkw8z1fIA" name="XS$NULL" dataManager="_EXItAPKwEea8svXJIesBYg"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_TlP64PgfEeaS3Zkw8z1fIA" name="ANONYMOUS" dataManager="_EXItAPKwEea8svXJIesBYg"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_TlP64fgfEeaS3Zkw8z1fIA" name="APEX_040000" dataManager="_EXItAPKwEea8svXJIesBYg"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_TlP64vgfEeaS3Zkw8z1fIA" name="APEX_PUBLIC_USER" dataManager="_EXItAPKwEea8svXJIesBYg"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_TlP64_gfEeaS3Zkw8z1fIA" name="CTXSYS" dataManager="_EXItAPKwEea8svXJIesBYg"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_TlP65PgfEeaS3Zkw8z1fIA" name="FLOWS_FILES" dataManager="_EXItAPKwEea8svXJIesBYg"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_TlP65vgfEeaS3Zkw8z1fIA" name="MDSYS" dataManager="_EXItAPKwEea8svXJIesBYg"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_TlP65_gfEeaS3Zkw8z1fIA" name="OUTLN" dataManager="_EXItAPKwEea8svXJIesBYg"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_TlP66PgfEeaS3Zkw8z1fIA" name="SYS" dataManager="_EXItAPKwEea8svXJIesBYg"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_TlP66vgfEeaS3Zkw8z1fIA" name="XDB" dataManager="_EXItAPKwEea8svXJIesBYg"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_TlP66_gfEeaS3Zkw8z1fIA" name="XS$NULL" dataManager="_EXItAPKwEea8svXJIesBYg"/>
   <orgomg.cwm.resource.relational:Schema xmi:id="_Ejo39fKwEea8svXJIesBYg" name="HR" dataManager="_EXItAPKwEea8svXJIesBYg">
     <ownedElement xsi:type="relational:TdTable" xmi:id="_S7AsEPgUEeaS3Zkw8z1fIA" name="LOCATIONS" id="_S66lcPgUEeaS3Zkw8z1fIA" comment="Locations table that contains specific address of a specific office,&#xA;warehouse, and/or production site of a company. Does not store addresses /&#xA;locations of customers. Contains 23 rows; references with the&#xA;departments and countries tables. " label="LOCATIONS" tableType="TABLE">
       <taggedValue xmi:id="_S7AsEfgUEeaS3Zkw8z1fIA" tag="Comment" value="Locations table that contains specific address of a specific office,&#xA;warehouse, and/or production site of a company. Does not store addresses /&#xA;locations of customers. Contains 23 rows; references with the&#xA;departments and countries tables. "/>
